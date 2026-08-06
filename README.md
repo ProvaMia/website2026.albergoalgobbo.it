@@ -118,6 +118,46 @@ Vercel Serverless Function (`apps/frontend/api/chat.js`) come sostituto.
 Il `vercel.json` deve stare in `apps/frontend/` (il Root Directory), **non** nella
 root del repo. Vercel legge il config solo dal Root Directory configurato.
 
+## Deploy su Cloudflare Pages (solo frontend)
+
+Il frontend può essere deployato su **Cloudflare Pages**.
+Poiché il backend Hono è un server Node, su Pages viene deployata solo la SPA
+statica; le API `/api/*` non sono disponibili a meno di non configurare
+separatamente un Cloudflare Worker per il backend.
+
+### Setup Cloudflare Pages (Git integration)
+
+1. Crea un nuovo progetto su Cloudflare Pages collegato al repo GitHub.
+2. Imposta i parametri di build:
+   - **Build command**: `pnpm --filter @brochure/shared build && pnpm --filter @brochure/frontend build`
+   - **Build output directory**: `apps/frontend/dist`
+   - **Root directory**: `/` (root del monorepo)
+3. Configura le variabili d'ambiente necessarie al frontend nella dashboard di Pages.
+4. **Lascia vuoto il campo "Deploy command"**: Cloudflare Pages pubblica
+   automaticamente i file nella cartella di output dopo il build. Non usare
+   `npx wrangler deploy`, che è riservato ai Workers.
+
+### Deploy da CLI
+
+Se preferisci deployare manualmente dopo il build:
+
+```bash
+pnpm --filter @brochure/shared build
+pnpm --filter @brochure/frontend build
+npx wrangler pages deploy apps/frontend/dist
+```
+
+### SPA fallback
+
+`apps/frontend/public/_redirects` contiene:
+
+```
+/* /index.html 200
+```
+
+che viene copiato in `dist/` e garantisce che le route del client-side router
+vengano servite dalla SPA.
+
 ## Stack
 
 | Area | Tech |
