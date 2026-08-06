@@ -7,7 +7,6 @@ export interface BookingSearchParams {
   checkIn: string
   checkOut: string
   adults: number
-  children: number
 }
 
 interface BookingFormProps {
@@ -31,7 +30,6 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
   const [checkIn, setCheckIn] = useState(formatDateInput(tomorrow))
   const [checkOut, setCheckOut] = useState(formatDateInput(dayAfterTomorrow))
   const [adults, setAdults] = useState(2)
-  const [children, setChildren] = useState(0)
   const [error, setError] = useState<string | null>(null)
 
   const validate = (): boolean => {
@@ -54,7 +52,7 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
       return false
     }
 
-    if (adults + children < 1) {
+    if (adults < 1) {
       setError(t('booking.form.errors.guests'))
       return false
     }
@@ -66,7 +64,7 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!validate()) return
-    onSearch({ checkIn, checkOut, adults, children })
+    onSearch({ checkIn, checkOut, adults })
   }
 
   return (
@@ -77,7 +75,7 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
         className
       )}
     >
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5 lg:items-end">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:items-end">
         <div className="lg:col-span-1">
           <label htmlFor="check-in" className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
             {t('booking.form.checkIn')}
@@ -127,25 +125,6 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
               className="w-full appearance-none border border-stone/60 bg-cream py-3 pl-10 pr-8 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
             >
               {[1, 2, 3, 4].map((n) => (
-                <option key={n} value={n}>{n}</option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        <div className="lg:col-span-1">
-          <label htmlFor="children" className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
-            {t('booking.form.children')}
-          </label>
-          <div className="relative">
-            <Users className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" aria-hidden="true" />
-            <select
-              id="children"
-              value={children}
-              onChange={(e) => setChildren(Number(e.target.value))}
-              className="w-full appearance-none border border-stone/60 bg-cream py-3 pl-10 pr-8 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
-            >
-              {[0, 1, 2, 3].map((n) => (
                 <option key={n} value={n}>{n}</option>
               ))}
             </select>

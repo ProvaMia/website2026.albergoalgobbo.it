@@ -83,9 +83,8 @@ export function Booking() {
 
   const filteredRooms = useMemo(() => {
     if (!searched || !searchParams) return rooms
-    const totalGuests = searchParams.adults + searchParams.children
     // TODO: replace with backend availability check
-    return rooms.filter((room) => room.capacity.total >= totalGuests)
+    return rooms.filter((room) => room.capacity.adults === searchParams.adults)
   }, [searched, searchParams])
 
   const selectedNights = selectedRoom
@@ -275,8 +274,6 @@ export function Booking() {
                     <Users className="h-4 w-4 text-gold" aria-hidden="true" />
                     <span>
                       {searchParams.adults} {t('booking.modal.adults')}
-                      {searchParams.children > 0 &&
-                        `, ${searchParams.children} ${t('booking.modal.children')}`}
                     </span>
                   </div>
                   <div className="pt-2 text-base font-medium text-ink">

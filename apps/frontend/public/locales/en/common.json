@@ -389,7 +389,6 @@
       "checkIn": "Check-in",
       "checkOut": "Check-out",
       "adults": "Adults",
-      "children": "Children",
       "errors": {
         "required": "Please select check-in and check-out",
         "pastDate": "Check-in date cannot be in the past",
@@ -404,7 +403,7 @@
       "title": "Our rooms",
       "subtitleInitial": "Select dates to see available rooms",
       "subtitleSearched": "Available rooms for selected dates",
-      "hint": "Select dates and number of guests, then click Check availability.",
+      "hint": "Select dates and number of adults, then click Check availability.",
       "noResults": "No rooms available for the selected combination. Contact us for a tailored solution."
     },
     "disclaimer": "Availability is indicative. You will receive booking confirmation by email or phone.",
@@ -423,7 +422,6 @@
       "nightSingular": "night",
       "nightPlural": "nights",
       "adults": "adults",
-      "children": "children",
       "total": "Estimated total"
     }
   },
