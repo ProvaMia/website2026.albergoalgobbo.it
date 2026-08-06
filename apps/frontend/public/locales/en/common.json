@@ -403,7 +403,6 @@
       "title": "Our rooms",
       "subtitleInitial": "Select dates to see available rooms",
       "subtitleSearched": "Available rooms for selected dates",
-      "hint": "Select dates and number of adults, then click Check availability.",
       "noResults": "No rooms available for the selected combination. Contact us for a tailored solution."
     },
     "disclaimer": "Availability is indicative. You will receive booking confirmation by email or phone.",

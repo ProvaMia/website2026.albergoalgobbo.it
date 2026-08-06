@@ -128,12 +128,6 @@ export function Booking() {
             }
           />
 
-          {!searched && (
-            <p className="mx-auto mt-6 max-w-2xl text-center font-sans text-sm font-light text-muted">
-              {t('booking.rooms.hint')}
-            </p>
-          )}
-
           <div className="mx-auto mt-10 max-w-5xl">
             <BookingForm onSearch={handleSearch} />
           </div>
