@@ -158,6 +158,14 @@ npx wrangler pages deploy apps/frontend/dist
 che viene copiato in `dist/` e garantisce che le route del client-side router
 vengano servite dalla SPA.
 
+### URL di produzione
+
+Il frontend è raggiungibile all’indirizzo:
+
+```
+https://0c3105b6.albergoalgobbo-frontend.pages.dev
+```
+
 ## Deploy backend su Cloudflare Workers
 
 Il backend Hono è deployabile su **Cloudflare Workers** tramite `wrangler`.
