@@ -158,6 +158,60 @@ npx wrangler pages deploy apps/frontend/dist
 che viene copiato in `dist/` e garantisce che le route del client-side router
 vengano servite dalla SPA.
 
+## Deploy backend su Cloudflare Workers
+
+Il backend Hono è deployabile su **Cloudflare Workers** tramite `wrangler`.
+
+### Configurazione
+
+- Entrypoint Worker: `apps/backend/src/worker.ts`
+- Config: `apps/backend/wrangler.toml`
+- Nome Worker: `albergoalgobbo-api`
+
+### Deploy da CLI
+
+Dalla directory `apps/backend`:
+
+```bash
+cd apps/backend
+npx wrangler deploy
+```
+
+oppure dalla root del monorepo:
+
+```bash
+pnpm --filter @brochure/backend deploy
+```
+
+### Variabili d'ambiente
+
+- `CONTACT_EMAIL` e `FROM_EMAIL` sono definite in `wrangler.toml` come plain vars.
+- `RESEND_API_KEY` è un secret e va impostato con:
+
+```bash
+cd apps/backend
+npx wrangler secret put RESEND_API_KEY
+```
+
+### Endpoint
+
+Dopo il deploy il backend è raggiungibile su:
+
+```
+https://albergoalgobbo-api.anteprime-web.workers.dev
+```
+
+### Limitazioni attuali
+
+Il backend attuale espone solo:
+
+- `GET /api/health`
+- `POST /api/contact`
+
+Le future route admin con database (camere, prenotazioni, autenticazione)
+dovranno usare **Cloudflare D1** invece di `better-sqlite3`, che non è
+compatibile con l'runtime Workers.
+
 ## Stack
 
 | Area | Tech |

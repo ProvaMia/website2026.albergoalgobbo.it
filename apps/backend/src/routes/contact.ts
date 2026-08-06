@@ -1,7 +1,8 @@
 import { Hono } from 'hono'
 import { ContactRequestSchema, type ContactResponse } from '@brochure/shared'
+import type { BackendVariables } from '../types/env.js'
 
-export const contactRoute = new Hono()
+export const contactRoute = new Hono<{ Variables: BackendVariables }>()
 
 contactRoute.post('/', async (c) => {
   let body: unknown
@@ -26,9 +27,10 @@ contactRoute.post('/', async (c) => {
     return c.json({ error: 'Invalid request' }, 400)
   }
 
+  const env = c.get('env')
   const timestamp = new Date().toISOString()
-  const contactEmail = process.env.CONTACT_EMAIL || 'info@albergoalgobbo.it'
-  const fromEmail = process.env.FROM_EMAIL || 'noreply@albergoalgobbo.it'
+  const contactEmail = env.CONTACT_EMAIL
+  const fromEmail = env.FROM_EMAIL
 
   const subject = `Richiesta di contatto da ${name}`
   const html = `
@@ -42,13 +44,13 @@ contactRoute.post('/', async (c) => {
   const senderName = name.replace(/[<>]/g, '').trim()
   const from = senderName ? `${senderName} <${fromEmail}>` : fromEmail
 
-  if (process.env.RESEND_API_KEY) {
+  if (env.RESEND_API_KEY) {
     try {
       const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          Authorization: `Bearer ${env.RESEND_API_KEY}`,
         },
         body: JSON.stringify({
           from,

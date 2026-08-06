@@ -1,0 +1,10 @@
+name = "albergoalgobbo-api"
+main = "src/worker.ts"
+compatibility_date = "2026-08-06"
+
+[vars]
+CONTACT_EMAIL = "info@albergoalgobbo.it"
+FROM_EMAIL = "noreply@albergoalgobbo.it"
+
+# Secrets (set via `wrangler secret put`):
+# RESEND_API_KEY

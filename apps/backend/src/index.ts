@@ -6,6 +6,7 @@ import { config as loadEnv } from 'dotenv'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { DEFAULT_API_PORT } from '@brochure/shared'
+import type { BackendVariables } from './types/env.js'
 import { healthRoute } from './routes/health.js'
 import { contactRoute } from './routes/contact.js'
 
@@ -14,10 +15,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 loadEnv({ path: path.resolve(__dirname, '../../../.env.local') })
 loadEnv({ path: path.resolve(__dirname, '../../../.env') })
 
-const app = new Hono()
+const app = new Hono<{ Variables: BackendVariables }>()
 
 app.use('*', logger())
 app.use('*', cors())
+
+app.use('*', async (c, next) => {
+  c.set('env', {
+    CONTACT_EMAIL: process.env.CONTACT_EMAIL || 'info@albergoalgobbo.it',
+    FROM_EMAIL: process.env.FROM_EMAIL || 'noreply@albergoalgobbo.it',
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+  })
+  await next()
+})
 
 app.route('/api/health', healthRoute)
 app.route('/api/contact', contactRoute)
