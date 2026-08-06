@@ -1,0 +1,74 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e4]:
+    - generic [ref=f3e5]: Welcome to Albergo Al Gobbo
+    - list [ref=f3e6]:
+      - listitem [ref=f3e7]:
+        - generic [ref=f3e8]: 
+        - link "+39 041 715001" [ref=f3e9] [cursor=pointer]:
+          - /url: "tel:0039041715001 "
+      - listitem [ref=f3e10]:
+        - generic [ref=f3e11]: 
+        - link "info@albergoalgobbo.it" [ref=f3e12] [cursor=pointer]:
+          - /url: mailto:info@albergoalgobbo.it
+  - banner [ref=f3e13]:
+    - generic [ref=f3e14]:
+      - generic [ref=f3e15]:
+        - button [ref=f3e16] [cursor=pointer]
+        - link [ref=f3e20] [cursor=pointer]:
+          - /url: https://albergoalgobbo.it/
+          - img "albergoalgobbo.it" [ref=f3e21]
+      - navigation [ref=f3e22]:
+        - list [ref=f3e23]:
+          - listitem [ref=f3e24]: Menu
+          - listitem [ref=f3e25]:
+            - link "Home" [ref=f3e26] [cursor=pointer]:
+              - /url: https://albergoalgobbo.it/
+          - listitem [ref=f3e27]:
+            - link "Hotel" [ref=f3e28] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f3e30]:
+            - link "Camere" [ref=f3e31] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f3e33]:
+            - link "Galleria" [ref=f3e34] [cursor=pointer]:
+              - /url: https://albergoalgobbo.it/galleria/
+          - listitem [ref=f3e35]:
+            - link "Contattaci" [ref=f3e36] [cursor=pointer]:
+              - /url: https://albergoalgobbo.it/contactit/
+          - listitem [ref=f3e37]:
+            - link [ref=f3e38] [cursor=pointer]:
+              - /url: "#"
+              - img "it" [ref=f3e39]
+  - generic [ref=f3e42]:
+    - heading "Tutte le camere" [level=1] [ref=f3e43]
+    - list [ref=f3e44]:
+      - listitem [ref=f3e45]:
+        - link "Home" [ref=f3e46] [cursor=pointer]:
+          - /url: https://albergoalgobbo.it/
+        - text: /
+      - listitem [ref=f3e47]: Tutte le camere
+  - main [ref=f3e48]:
+    - generic [ref=f3e52]:
+      - figure [ref=f3e54]:
+        - link [ref=f3e55] [cursor=pointer]:
+          - /url: https://albergoalgobbo.it/rooms/camera-basic/
+          - img "Camera Basic con AC (wc esterno)" [ref=f3e56]
+      - generic [ref=f3e57]:
+        - heading [level=3] [ref=f3e58]:
+          - link "Camera Basic con AC (wc esterno)" [ref=f3e59] [cursor=pointer]:
+            - /url: https://albergoalgobbo.it/rooms/camera-basic/
+        - paragraph [ref=f3e60]: Camera Basic
+        - generic [ref=f3e62]:
+          - generic [ref=f3e63] [cursor=pointer]: 
+          - generic [ref=f3e65] [cursor=pointer]: 
+          - generic [ref=f3e67] [cursor=pointer]: 
+          - generic [ref=f3e69] [cursor=pointer]: 
+          - generic [ref=f3e71] [cursor=pointer]: 
+          - generic [ref=f3e73] [cursor=pointer]: 
+          - generic [ref=f3e75] [cursor=pointer]: 
+          - generic [ref=f3e77] [cursor=pointer]: 
+      - generic [ref=f3e80]:
+        - paragraph [ref=f3e81]: Si è verificato un errore critico sul tuo sito web.
+        - paragraph [ref=f3e82]:
+          - link "Scopri di più riguardo la risoluzione dei problemi in WordPress." [ref=f3e83] [cursor=pointer]:
+            - /url: https://wordpress.org/documentation/article/faq-troubleshooting/

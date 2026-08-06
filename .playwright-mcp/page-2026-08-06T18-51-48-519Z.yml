@@ -1,0 +1,122 @@
+- generic [ref=f4e2]:
+  - link "Vai al contenuto principale" [ref=f4e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e4]:
+    - navigation "Navigazione principale" [ref=f4e5]:
+      - link [ref=f4e7] [cursor=pointer]:
+        - /url: /it
+        - img "Albergo Al Gobbo" [ref=f4e8]
+      - button "Apri menu" [ref=f4e10] [cursor=pointer]
+  - main [ref=f4e12]:
+    - main [ref=f4e205]:
+      - generic [ref=f4e206]:
+        - generic [ref=f4e207]:
+          - img "Albergo Al Gobbo" [ref=f4e208]
+          - heading "Area riservata" [level=1] [ref=f4e209]
+        - button "Esci" [ref=f4e210] [cursor=pointer]
+      - navigation "Navigazione area riservata" [ref=f4e215]:
+        - link "Camere" [ref=f4e216] [cursor=pointer]:
+          - /url: /it/admin/rooms
+        - link "Prenotazioni" [ref=f4e220] [cursor=pointer]:
+          - /url: /it/admin/bookings
+      - generic [ref=f4e223]:
+        - generic [ref=f4e225]:
+          - heading "Gestione camere" [level=2] [ref=f4e226]
+          - paragraph [ref=f4e227]: Attiva o disattiva la disponibilità di ogni camera, modifica i prezzi e aggiungi nuove camere.
+        - generic [ref=f4e228]:
+          - heading "Aggiungi camera" [level=3] [ref=f4e229]
+          - generic [ref=f4e230]:
+            - generic [ref=f4e231]:
+              - generic [ref=f4e232]: Nome camera
+              - textbox "Nome camera" [ref=f4e233]
+            - generic [ref=f4e234]:
+              - generic [ref=f4e235]: Tipologia
+              - combobox "Tipologia" [ref=f4e236]:
+                - option "Doppia" [selected]
+                - option "Singola"
+            - generic [ref=f4e237]:
+              - generic [ref=f4e238]: Posti letto
+              - spinbutton "Posti letto" [ref=f4e239]: "2"
+            - generic [ref=f4e240]:
+              - generic [ref=f4e241]: Prezzo base
+              - spinbutton "Prezzo base" [ref=f4e242]
+          - button "Aggiungi" [disabled] [ref=f4e243]
+        - table [ref=f4e246]:
+          - rowgroup [ref=f4e247]:
+            - row [ref=f4e248]:
+              - columnheader "Camera" [ref=f4e249]
+              - columnheader "Tipologia" [ref=f4e250]
+              - columnheader "Posti" [ref=f4e251]
+              - columnheader "Prezzo da" [ref=f4e252]
+              - columnheader "Disponibile" [ref=f4e253]
+          - rowgroup [ref=f4e254]:
+            - row [ref=f4e255]:
+              - cell "Comfort AC" [ref=f4e256]
+              - cell "Letto matrimoniale o due letti singoli" [ref=f4e262]
+              - cell "2 ospiti" [ref=f4e263]
+              - cell "€ 95" [ref=f4e264]:
+                - generic [ref=f4e265]:
+                  - generic [ref=f4e266]: €
+                  - spinbutton [ref=f4e267]: "95"
+              - cell [ref=f4e268]:
+                - button "Non disponibile" [active] [ref=f4e269] [cursor=pointer]
+            - row [ref=f4e270]:
+              - cell "Standard Doppia" [ref=f4e271]
+              - cell "Letto matrimoniale o due letti singoli" [ref=f4e277]
+              - cell "2 ospiti" [ref=f4e278]
+              - cell "€ 80" [ref=f4e279]:
+                - generic [ref=f4e280]:
+                  - generic [ref=f4e281]: €
+                  - spinbutton [ref=f4e282]: "80"
+              - cell [ref=f4e283]:
+                - button "Disponibile" [pressed] [ref=f4e284] [cursor=pointer]
+            - row [ref=f4e285]:
+              - cell "Basic con AC" [ref=f4e286]
+              - cell "Letto matrimoniale o due letti singoli" [ref=f4e292]
+              - cell "2 ospiti" [ref=f4e293]
+              - cell "€ 70" [ref=f4e294]:
+                - generic [ref=f4e295]:
+                  - generic [ref=f4e296]: €
+                  - spinbutton [ref=f4e297]: "70"
+              - cell [ref=f4e298]:
+                - button "Disponibile" [pressed] [ref=f4e299] [cursor=pointer]
+            - row [ref=f4e300]:
+              - cell "Economy Doppia" [ref=f4e301]
+              - cell "Letto matrimoniale o due letti singoli" [ref=f4e307]
+              - cell "2 ospiti" [ref=f4e308]
+              - cell "€ 55" [ref=f4e309]:
+                - generic [ref=f4e310]:
+                  - generic [ref=f4e311]: €
+                  - spinbutton [ref=f4e312]: "55"
+              - cell [ref=f4e313]:
+                - button "Disponibile" [pressed] [ref=f4e314] [cursor=pointer]
+            - row [ref=f4e315]:
+              - cell "Standard Singola" [ref=f4e316]
+              - cell "Letto singolo" [ref=f4e322]
+              - cell "1 ospiti" [ref=f4e323]
+              - cell "€ 65" [ref=f4e324]:
+                - generic [ref=f4e325]:
+                  - generic [ref=f4e326]: €
+                  - spinbutton [ref=f4e327]: "65"
+              - cell [ref=f4e328]:
+                - button "Disponibile" [pressed] [ref=f4e329] [cursor=pointer]
+            - row [ref=f4e330]:
+              - cell "Economy Singola" [ref=f4e331]
+              - cell "Letto singolo" [ref=f4e337]
+              - cell "1 ospiti" [ref=f4e338]
+              - cell "€ 45" [ref=f4e339]:
+                - generic [ref=f4e340]:
+                  - generic [ref=f4e341]: €
+                  - spinbutton [ref=f4e342]: "45"
+              - cell [ref=f4e343]:
+                - button "Disponibile" [pressed] [ref=f4e344] [cursor=pointer]
+  - dialog "Consenso cookie" [ref=f4e194]:
+    - paragraph [ref=f4e195]:
+      - text: Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti l'uso dei cookie.
+      - link "Scopri di più" [ref=f4e196] [cursor=pointer]:
+        - /url: /it/privacy
+    - generic [ref=f4e197]:
+      - generic [ref=f4e198]:
+        - button "Accetta tutti" [ref=f4e199] [cursor=pointer]
+        - button "Rifiuta" [ref=f4e200] [cursor=pointer]
+      - button "Personalizza" [ref=f4e201] [cursor=pointer]

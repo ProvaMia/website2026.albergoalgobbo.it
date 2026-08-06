@@ -1,0 +1,164 @@
+- generic [ref=f4e2]:
+  - link "Vai al contenuto principale" [ref=f4e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e4]:
+    - navigation "Navigazione principale" [ref=f4e5]:
+      - link [ref=f4e7] [cursor=pointer]:
+        - /url: /it
+        - img "Albergo Al Gobbo" [ref=f4e8]
+      - button "Apri menu" [ref=f4e10] [cursor=pointer]
+  - main [ref=f4e12]:
+    - generic [ref=f4e13]:
+      - generic [ref=f4e15]:
+        - heading "Area riservata" [level=1] [ref=f4e16]
+        - button "Esci" [ref=f4e17] [cursor=pointer]
+      - main [ref=f4e21]:
+        - navigation "Navigazione area riservata" [ref=f4e22]:
+          - link "Camere" [ref=f4e23] [cursor=pointer]:
+            - /url: /it/admin/rooms
+          - link "Prenotazioni" [ref=f4e27] [cursor=pointer]:
+            - /url: /it/admin/bookings
+        - generic [ref=f4e30]:
+          - generic [ref=f4e32]:
+            - heading "Gestione camere" [level=2] [ref=f4e33]
+            - paragraph [ref=f4e34]: Attiva o disattiva la disponibilità di ogni camera, modifica i prezzi e aggiungi nuove camere.
+          - generic [ref=f4e35]:
+            - heading "Aggiungi camera" [level=3] [ref=f4e36]
+            - generic [ref=f4e37]:
+              - generic [ref=f4e38]:
+                - generic [ref=f4e39]: Nome camera
+                - textbox "Nome camera" [ref=f4e40]
+              - generic [ref=f4e41]:
+                - generic [ref=f4e42]: Tipologia
+                - combobox "Tipologia" [ref=f4e43]:
+                  - option "Doppia" [selected]
+                  - option "Singola"
+              - generic [ref=f4e44]:
+                - generic [ref=f4e45]: Posti letto
+                - spinbutton "Posti letto" [ref=f4e46]: "2"
+              - generic [ref=f4e47]:
+                - generic [ref=f4e48]: Prezzo base
+                - spinbutton "Prezzo base" [ref=f4e49]
+            - button "Aggiungi" [disabled] [ref=f4e50]
+          - table [ref=f4e53]:
+            - rowgroup [ref=f4e54]:
+              - row [ref=f4e55]:
+                - columnheader "Camera" [ref=f4e56]
+                - columnheader "Tipologia" [ref=f4e57]
+                - columnheader "Posti" [ref=f4e58]
+                - columnheader "Prezzo da" [ref=f4e59]
+                - columnheader "Disponibile" [ref=f4e60]
+            - rowgroup [ref=f4e61]:
+              - row [ref=f4e62]:
+                - cell "Comfort AC" [ref=f4e63]
+                - cell "Letto matrimoniale o due letti singoli" [ref=f4e69]
+                - cell "2 ospiti" [ref=f4e70]
+                - cell "€ 95" [ref=f4e71]:
+                  - generic [ref=f4e72]:
+                    - generic [ref=f4e73]: €
+                    - spinbutton [ref=f4e74]: "95"
+                - cell [ref=f4e75]:
+                  - button "Disponibile" [pressed] [ref=f4e76] [cursor=pointer]
+              - row [ref=f4e77]:
+                - cell "Standard Doppia" [ref=f4e78]
+                - cell "Letto matrimoniale o due letti singoli" [ref=f4e84]
+                - cell "2 ospiti" [ref=f4e85]
+                - cell "€ 80" [ref=f4e86]:
+                  - generic [ref=f4e87]:
+                    - generic [ref=f4e88]: €
+                    - spinbutton [ref=f4e89]: "80"
+                - cell [ref=f4e90]:
+                  - button "Disponibile" [pressed] [ref=f4e91] [cursor=pointer]
+              - row [ref=f4e92]:
+                - cell "Basic con AC" [ref=f4e93]
+                - cell "Letto matrimoniale o due letti singoli" [ref=f4e99]
+                - cell "2 ospiti" [ref=f4e100]
+                - cell "€ 70" [ref=f4e101]:
+                  - generic [ref=f4e102]:
+                    - generic [ref=f4e103]: €
+                    - spinbutton [ref=f4e104]: "70"
+                - cell [ref=f4e105]:
+                  - button "Disponibile" [pressed] [ref=f4e106] [cursor=pointer]
+              - row [ref=f4e107]:
+                - cell "Economy Doppia" [ref=f4e108]
+                - cell "Letto matrimoniale o due letti singoli" [ref=f4e114]
+                - cell "2 ospiti" [ref=f4e115]
+                - cell "€ 55" [ref=f4e116]:
+                  - generic [ref=f4e117]:
+                    - generic [ref=f4e118]: €
+                    - spinbutton [ref=f4e119]: "55"
+                - cell [ref=f4e120]:
+                  - button "Disponibile" [pressed] [ref=f4e121] [cursor=pointer]
+              - row [ref=f4e122]:
+                - cell "Standard Singola" [ref=f4e123]
+                - cell "Letto singolo" [ref=f4e129]
+                - cell "1 ospiti" [ref=f4e130]
+                - cell "€ 65" [ref=f4e131]:
+                  - generic [ref=f4e132]:
+                    - generic [ref=f4e133]: €
+                    - spinbutton [ref=f4e134]: "65"
+                - cell [ref=f4e135]:
+                  - button "Disponibile" [pressed] [ref=f4e136] [cursor=pointer]
+              - row [ref=f4e137]:
+                - cell "Economy Singola" [ref=f4e138]
+                - cell "Letto singolo" [ref=f4e144]
+                - cell "1 ospiti" [ref=f4e145]
+                - cell "€ 45" [ref=f4e146]:
+                  - generic [ref=f4e147]:
+                    - generic [ref=f4e148]: €
+                    - spinbutton [ref=f4e149]: "45"
+                - cell [ref=f4e150]:
+                  - button "Disponibile" [pressed] [ref=f4e151] [cursor=pointer]
+  - contentinfo [ref=f4e152]:
+    - generic [ref=f4e153]:
+      - generic [ref=f4e154]:
+        - generic [ref=f4e155]:
+          - img "Albergo Al Gobbo" [ref=f4e156]
+          - paragraph [ref=f4e157]: Nel cuore di Venezia dal 1930
+        - generic [ref=f4e158]:
+          - heading "Navigazione" [level=3] [ref=f4e159]
+          - list [ref=f4e160]:
+            - listitem [ref=f4e161]:
+              - link "Home" [ref=f4e162] [cursor=pointer]:
+                - /url: /it
+            - listitem [ref=f4e163]:
+              - link "Prenota" [ref=f4e164] [cursor=pointer]:
+                - /url: /it/prenota
+            - listitem [ref=f4e165]:
+              - link "Chi siamo" [ref=f4e166] [cursor=pointer]:
+                - /url: /it/chi-siamo
+            - listitem [ref=f4e167]:
+              - link "Galleria" [ref=f4e168] [cursor=pointer]:
+                - /url: /it/galleria
+            - listitem [ref=f4e169]:
+              - link "Contatti" [ref=f4e170] [cursor=pointer]:
+                - /url: /it/contatti
+        - generic [ref=f4e171]:
+          - heading "Contatti" [level=3] [ref=f4e172]
+          - list [ref=f4e173]:
+            - listitem [ref=f4e174]:
+              - generic [ref=f4e178]: Campo San Geremia 312, Cannaregio, 30121 Venezia
+            - listitem [ref=f4e179]:
+              - link "+39 041 715125" [ref=f4e182] [cursor=pointer]:
+                - /url: tel:+39041715125
+            - listitem [ref=f4e183]:
+              - link "info@albergoalgobbo.it" [ref=f4e187] [cursor=pointer]:
+                - /url: mailto:info@albergoalgobbo.it
+      - generic [ref=f4e188]:
+        - paragraph [ref=f4e189]: © 2026 Albergo Al Gobbo — Tutti i diritti riservati.
+        - generic [ref=f4e190]:
+          - link "Privacy" [ref=f4e191] [cursor=pointer]:
+            - /url: /it/privacy
+          - generic [ref=f4e192]: "|"
+          - link "Cookie Policy" [ref=f4e193] [cursor=pointer]:
+            - /url: /it/privacy
+  - dialog "Consenso cookie" [ref=f4e194]:
+    - paragraph [ref=f4e195]:
+      - text: Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti l'uso dei cookie.
+      - link "Scopri di più" [ref=f4e196] [cursor=pointer]:
+        - /url: /it/privacy
+    - generic [ref=f4e197]:
+      - generic [ref=f4e198]:
+        - button "Accetta tutti" [ref=f4e199] [cursor=pointer]
+        - button "Rifiuta" [ref=f4e200] [cursor=pointer]
+      - button "Personalizza" [ref=f4e201] [cursor=pointer]

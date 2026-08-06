@@ -1,0 +1,467 @@
+{
+  "nav": {
+    "home": "Home",
+    "booking": "Book",
+    "about": "About",
+    "gallery": "Gallery",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contacts": "Contacts",
+    "tagline": "In the heart of Venice since 1930",
+    "allRightsReserved": "All rights reserved.",
+    "legalNotes": "Legal Notes",
+    "privacy": "Privacy",
+    "cookiePolicy": "Cookie Policy",
+    "address": "Campo San Geremia 312, Cannaregio, 30121 Venice",
+    "phone": "+39 041 715125",
+    "email": "info@albergoalgobbo.it"
+  },
+  "buttons": {
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "send": "Send",
+    "accept": "Accept",
+    "decline": "Decline",
+    "backToHome": "Back to Home",
+    "reloadPage": "Reload page",
+    "bookNow": "Book now",
+    "checkAvailability": "Check availability"
+  },
+  "aria": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "scrollDown": "Scroll down",
+    "close": "Close",
+    "backToTop": "Back to top",
+    "loading": "Loading",
+    "skipToContent": "Skip to main content",
+    "login": "Restricted area",
+    "adminNavigation": "Restricted area navigation",
+    "languageSwitcher": "Change language"
+  },
+  "contact": {
+    "address": "Campo San Geremia 312",
+    "city": "Cannaregio, 30121 Venice",
+    "email": "info@albergoalgobbo.it",
+    "phone": "+39 041 715125"
+  },
+  "contacts": {
+    "hero": {
+      "title": "Contacts",
+      "subtitle": "We are here to help. Write to us or visit us in the heart of Venice."
+    },
+    "info": {
+      "title": "Where we are",
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email"
+    },
+    "form": {
+      "title": "Write to us",
+      "subtitle": "Fill in the form and we will reply within 24 hours.",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "privacy": "I agree to the processing of my personal data according to the privacy policy",
+      "privacyLink": "privacy policy",
+      "submit": "Send message",
+      "sending": "Sending",
+      "validation": {
+        "name": "Please enter at least 2 characters",
+        "email": "Please enter a valid email address",
+        "message": "The message must be at least 10 characters long",
+        "privacy": "You must agree to the processing of your data"
+      },
+      "successTitle": "Message sent",
+      "successMessage": "Thank you for contacting us. We will reply as soon as possible.",
+      "errorTitle": "Sending failed",
+      "errorMessage": "We could not send your message. Please try again later or email us directly."
+    },
+    "map": {
+      "title": "Find us here"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy and cookie policy",
+      "subtitle": "Transparency about your data and the technologies used by the site."
+    },
+    "tocTitle": "Contents",
+    "tocLabel": "Page contents",
+    "lastUpdated": "Last updated: August 6, 2026",
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introduction",
+        "paragraphs": [
+          "Your privacy is important to us. This page explains how we collect, use and protect your personal data, as well as the use of cookies on albergoalgobbo.it.",
+          "By browsing the site and using our contact or booking forms, you agree to the practices described in this notice."
+        ]
+      },
+      {
+        "id": "titolare",
+        "title": "Data controller",
+        "paragraphs": [
+          "The data controller is:",
+          "Albergo Al Gobbo\nCampo San Geremia 312\n30121 Venice (VE), Italy\nEmail: info@albergoalgobbo.it\nPhone: +39 041 715125"
+        ]
+      },
+      {
+        "id": "dati",
+        "title": "Data collected and purposes",
+        "paragraphs": [
+          "We collect data that you voluntarily provide through our contact and booking forms: name, surname, email address, phone number and message content. This data is used solely to respond to your requests, manage bookings and provide you with the necessary information.",
+          "We also collect anonymous, aggregated browsing data (such as browser type, operating system and pages visited) to improve the site experience and detect any technical issues."
+        ]
+      },
+      {
+        "id": "base",
+        "title": "Legal basis and retention",
+        "paragraphs": [
+          "The processing of personal data is based on your consent, given by completing and submitting the forms, or on the performance of pre-contractual measures when you contact us for a booking.",
+          "Contact data is kept for as long as strictly necessary to handle your request and, in any case, no longer than 24 months from the last contact, unless otherwise required by law."
+        ]
+      },
+      {
+        "id": "cookie",
+        "title": "Cookies",
+        "paragraphs": [
+          "Cookies are small text files that the websites you visit send to your browser, where they are stored and then sent back to those sites on your next visit.",
+          "We use the following categories of cookies:"
+        ],
+        "list": [
+          "Technical and necessary cookies: essential for the site to work, for example to remember the selected language and manage cookie consent.",
+          "Analytics cookies: collect anonymous statistical information about visits and site usage to help us improve content. They are installed only if you give your consent.",
+          "Marketing cookies: used to show you personalised content and relevant advertisements. They are installed only if you give your consent."
+        ]
+      },
+      {
+        "id": "gestione",
+        "title": "Cookie management",
+        "paragraphs": [
+          "You can change your cookie preferences at any time by clicking the notice banner on the site or through your browser settings.",
+          "Most browsers allow you to view, manage and delete installed cookies. Please refer to your browser's help guide for specific instructions."
+        ]
+      },
+      {
+        "id": "diritti",
+        "title": "Your rights",
+        "paragraphs": [
+          "You have the right to access your personal data, request its rectification, erasure, restriction of processing or object to its use. You can exercise these rights at any time by writing to info@albergoalgobbo.it.",
+          "If you believe that the processing of your data violates applicable law, you also have the right to lodge a complaint with the competent data protection authority."
+        ]
+      },
+      {
+        "id": "modifiche",
+        "title": "Changes to this notice",
+        "paragraphs": [
+          "We reserve the right to update this notice to reflect any changes in legislation or service improvements. We encourage you to check this page periodically to stay informed."
+        ]
+      }
+    ]
+  },
+  "login": {
+    "hero": {
+      "title": "Restricted area",
+      "subtitle": "Hotel management access only."
+    },
+    "form": {
+      "username": "Username",
+      "password": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in..."
+    },
+    "error": {
+      "invalidCredentials": "Invalid username or password."
+    },
+    "message": {
+      "title": "Access activation pending",
+      "text": "The restricted area will be available soon. For information, please write to info@albergoalgobbo.it.",
+      "back": "Back to login"
+    }
+  },
+  "admin": {
+    "title": "Restricted area",
+    "logout": "Logout",
+    "nav": {
+      "rooms": "Rooms",
+      "bookings": "Bookings"
+    },
+    "rooms": {
+      "title": "Room management",
+      "subtitle": "Edit prices and images, add or remove rooms, manage occupancy by date.",
+      "name": "Room",
+      "capacity": "Guests",
+      "price": "Price from",
+      "guests": "guests",
+      "addRoom": "Add room",
+      "add": "Add",
+      "newName": "Room name",
+      "newCapacity": "Beds",
+      "newPrice": "Base price",
+      "image": "Image",
+      "zoomImage": "Zoom image",
+      "uploadImage": "Upload image",
+      "changeImage": "Change image",
+      "removeImage": "Remove image",
+      "actions": "Actions",
+      "delete": "Delete room",
+      "deleteTitle": "Confirm deletion",
+      "deleteConfirm": "Are you sure you want to delete the room \"{{name}}\"? This action cannot be undone.",
+      "deleteCancel": "Cancel",
+      "deleteConfirmButton": "Delete",
+      "saveChanges": "Save changes",
+      "discardChanges": "Discard changes",
+      "unsavedChanges": "Unsaved changes",
+      "unavailabilityTitle": "Unavailability",
+      "unavailabilitySubtitle": "Set the periods when a room is unavailable. Selecting 'Booking' will add the record to the Bookings section.",
+      "unavailabilityRoom": "Room",
+      "unavailabilitySelectRoom": "Select room",
+      "unavailabilityType": "Type",
+      "unavailabilityTypeBooking": "Booking",
+      "unavailabilityTypeOther": "Other",
+      "unavailabilityFrom": "From",
+      "unavailabilityTo": "To",
+      "unavailabilityIndeterminate": "Indefinite period",
+      "unavailabilityGuestName": "Full name",
+      "unavailabilityGuestEmail": "Email",
+      "unavailabilityGuestPhone": "Phone",
+      "unavailabilityNote": "Note",
+      "unavailabilityAdd": "Add unavailability",
+      "unavailabilityEmpty": "No unavailability added yet.",
+      "unavailabilityDelete": "Delete unavailability",
+      "unavailabilityDeleteTitle": "Confirm deletion",
+      "unavailabilityDeleteConfirm": "Are you sure you want to delete the unavailability for room \"{{name}}\" from {{start}} to {{end}}?",
+      "unavailabilityDeleteCancel": "Cancel",
+      "unavailabilityDeleteConfirmButton": "Delete"
+    },
+    "bookings": {
+      "title": "Bookings",
+      "subtitle": "View and update booking request status.",
+      "filter": "Status",
+      "empty": "No bookings match the selected filter.",
+      "changeStatus": "Change status",
+      "delete": "Delete booking",
+      "deleteTitle": "Confirm deletion",
+      "deleteConfirm": "Are you sure you want to delete the booking for {{name}} in room {{room}}? This action cannot be undone.",
+      "deleteCancel": "Cancel",
+      "deleteConfirmButton": "Delete",
+      "saveChanges": "Save changes",
+      "discardChanges": "Discard changes",
+      "unsavedChanges": "Unsaved changes",
+      "status": {
+        "all": "All",
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "cancelled": "Cancelled"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Albergo Al Gobbo",
+      "subtitle": "In the heart of Venice, steps from the train station",
+      "microcopy": "Vinco Family · Hospitality since 1930",
+      "ctaPrimary": "Book your stay",
+      "ctaSecondary": "Discover the hotel"
+    },
+    "highlights": {
+      "since": "Since 1930",
+      "sinceLabel": "Family-run",
+      "station": "2 minutes",
+      "stationLabel": "From Santa Lucia station",
+      "wifi": "Free WiFi",
+      "wifiLabel": "Throughout the property",
+      "cleaning": "Daily cleaning",
+      "cleaningLabel": "For your comfort"
+    },
+    "welcome": {
+      "eyebrow": "Welcome",
+      "title": "A small hotel, a big welcome",
+      "text": "Albergo Al Gobbo is a small family-run hotel in the heart of Venice, in Campo San Geremia. Founded in 1930 by Mrs. Maria Vinco, it is still run by the Vinco family, who have been taking care of guests for three generations. Small, clean and a few steps from the station: here you will feel at home."
+    },
+    "rooms": {
+      "eyebrow": "Rooms",
+      "title": "Choose the right room for your stay",
+      "subtitle": "From Economy to Comfort with air conditioning, you will find the right accommodation to visit Venice in complete comfort.",
+      "cta": "See all rooms"
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "Everything you need to feel at home",
+      "subtitle": "Free WiFi, air conditioning, breakfast on request and daily cleaning: the small details that make the difference.",
+      "wifi": {
+        "title": "Free WiFi",
+        "description": "Free WiFi connection available in every room and common area."
+      },
+      "ac": {
+        "title": "Air conditioning",
+        "description": "Rooms equipped with air conditioning for maximum comfort on hot days."
+      },
+      "heating": {
+        "title": "Heating",
+        "description": "Independent heating for a comfortable stay even in winter."
+      },
+      "breakfast": {
+        "title": "Breakfast on request",
+        "description": "Breakfast available on request to start your day with energy."
+      },
+      "cleaning": {
+        "title": "Daily cleaning",
+        "description": "Rooms are freshened up and cleaned with care every day."
+      },
+      "pets": {
+        "title": "Pets allowed",
+        "description": "We welcome your four-legged friends on request, so you never have to leave them behind."
+      }
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "In the heart of Venice",
+      "text": "Campo San Geremia 312, a short walk from Santa Lucia train station, Piazzale Roma and the Marco Polo airport water connection. Rialto and San Marco are reachable on foot with a pleasant walk.",
+      "cta": "How to reach us"
+    },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "From our guests",
+      "review1": "Perfect location, very kind owners and spotless room. We will definitely come back.",
+      "reviewer1": "Claudio M.",
+      "review2": "Small hotel with a big heart. We felt welcomed like at home.",
+      "reviewer2": "Samantha A.",
+      "review3": "Great value for money two minutes from the station. Recommended!",
+      "reviewer3": "Alessandro A."
+    },
+    "ctaBanner": {
+      "title": "Ready to experience Venice?",
+      "button": "Book now"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Our story",
+      "subtitle": "Three generations of Venetian hospitality from the Vinco family"
+    },
+    "story": {
+      "title": "One hotel, one family",
+      "text": "Albergo Al Gobbo was founded in 1930 by Mrs. Maria Vinco, who opened the doors of her home to travellers looking for a welcoming refuge in the heart of Venice. Ever since, for nearly a century, the Vinco family has preserved the same spirit: small thoughtful touches, impeccable cleanliness and a sincere smile for those arriving from afar. Today, in the third generation, we continue to offer a simple, authentic stay just steps from the station and the city's most beautiful sights.",
+      "imageAlt": "Hall of Albergo Al Gobbo"
+    },
+    "timeline": {
+      "title": "Almost a century of hospitality",
+      "subtitle": "From the very first guest to today, the same care for every detail.",
+      "milestone1": {
+        "year": "1930",
+        "title": "The origins",
+        "description": "Maria Vinco opens the doors of her home, turning it into a small hotel in the heart of Cannaregio."
+      },
+      "milestone2": {
+        "year": "1980",
+        "title": "A new momentum",
+        "description": "The family renovates the property while keeping intact the warm, familiar atmosphere guests love."
+      },
+      "milestone3": {
+        "year": "Today",
+        "title": "The third generation",
+        "description": "We still welcome travellers from around the world with the same dedication as always."
+      }
+    },
+    "attractions": {
+      "title": "Around us",
+      "subtitle": "From the hotel you can walk to the most beautiful places in Venice. Click a card to discover its story."
+    },
+    "award": {
+      "title": "Exceptional Service Award",
+      "text": "Recognition received from Gohotels.com for the hospitality and quality of service offered to our guests over the years.",
+      "cta": "Book your stay"
+    }
+  },
+  "booking": {
+    "hero": {
+      "title": "Book your stay",
+      "subtitle": "Choose dates and find the perfect room for your Venice"
+    },
+    "form": {
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "adults": "Adults",
+      "children": "Children",
+      "errors": {
+        "required": "Please select check-in and check-out",
+        "pastDate": "Check-in date cannot be in the past",
+        "invalidDates": "Check-out must be after check-in",
+        "guests": "Please select at least one guest"
+      }
+    },
+    "services": {
+      "bathroom": "Private bathroom"
+    },
+    "rooms": {
+      "title": "Our rooms",
+      "subtitleInitial": "Select dates to see available rooms",
+      "subtitleSearched": "Available rooms for selected dates",
+      "hint": "Select dates and number of guests, then click Check availability.",
+      "noResults": "No rooms available for the selected combination. Contact us for a tailored solution."
+    },
+    "disclaimer": "Availability is indicative. You will receive booking confirmation by email or phone.",
+    "help": {
+      "title": "Need help?",
+      "subtitle": "We are here to help you plan your stay"
+    },
+    "modal": {
+      "title": "Request booking",
+      "successTitle": "Request sent",
+      "successText": "Thank you! We will contact you soon to confirm availability.",
+      "nameLabel": "Full name",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "messageLabel": "Message",
+      "nightSingular": "night",
+      "nightPlural": "nights",
+      "adults": "adults",
+      "children": "children",
+      "total": "Estimated total"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Gallery",
+      "subtitle": "A visual journey through the hall, rooms, breakfast room and Venetian views that make your stay authentic"
+    },
+    "lightbox": {
+      "title": "Image preview",
+      "prev": "Previous image",
+      "next": "Next image",
+      "of": "of"
+    }
+  },
+  "cookie": {
+    "title": "Cookie consent",
+    "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept the use of cookies.",
+    "learnMore": "Learn more",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject",
+    "customize": "Customize",
+    "preferencesTitle": "Cookie Preferences",
+    "preferencesDescription": "Manage your cookie preferences. Necessary cookies are always on.",
+    "necessary": "Necessary",
+    "necessaryDesc": "Essential for the site to work.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how you use the site.",
+    "marketing": "Marketing",
+    "marketingDesc": "For personalized content and advertising.",
+    "alwaysOn": "Always on",
+    "on": "On",
+    "off": "Off",
+    "cancel": "Cancel",
+    "savePreferences": "Save preferences"
+  },
+  "error": {
+    "title": "Oops! Something went wrong",
+    "description": "An unexpected error has occurred. Try reloading the page or return to the homepage."
+  }
+}

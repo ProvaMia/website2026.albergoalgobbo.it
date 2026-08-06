@@ -1,0 +1,192 @@
+{
+  "counts": {
+    "images": 91,
+    "logos": 9,
+    "favicon": 0,
+    "videos": 0,
+    "documents": 0,
+    "certificates": 0,
+    "fonts": 0,
+    "other": 0
+  },
+  "total_downloaded": 100,
+  "skipped_videos": [],
+  "failed": [
+    {
+      "url": "https://albergoalgobbo.it/wp-content/uploads/2019/10/15221.jpg",
+      "filename": "15221.jpg"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://albergoalgobbo.it/",
+      "title": "Hotel situato nel cuore di Venezia - albergoalgobbo.it",
+      "count": 32
+    },
+    {
+      "url": "https://albergoalgobbo.it/attrazioni-e-utilita/",
+      "title": "Luoghi - albergoalgobbo.it",
+      "count": 19
+    },
+    {
+      "url": "https://albergoalgobbo.it/camere/",
+      "title": "Tutte le camere - albergoalgobbo.it",
+      "count": 7
+    },
+    {
+      "url": "https://albergoalgobbo.it/chi-siamo/",
+      "title": "Chi siamo - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/contactit/",
+      "title": "Contattaci - albergoalgobbo.it",
+      "count": 13
+    },
+    {
+      "url": "https://albergoalgobbo.it/cookie-policy/",
+      "title": "Cookie Policy - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/eagle_gallery_category/colazione/",
+      "title": "colazione Archivi - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/eagle_gallery_category/esterno/",
+      "title": "esterno Archivi - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/eagle_gallery_category/ingresso/",
+      "title": "ingresso Archivi - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/eagle_gallery_category/reception/",
+      "title": "ricevimento Archivi - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/eagle_gallery_category/vista/",
+      "title": "vista Archivi - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/facilities-2/",
+      "title": "Servizi - albergoalgobbo.it",
+      "count": 14
+    },
+    {
+      "url": "https://albergoalgobbo.it/galleria/",
+      "title": "Galleria - albergoalgobbo.it",
+      "count": 37
+    },
+    {
+      "url": "https://albergoalgobbo.it/gallery/",
+      "title": "Gallery - albergoalgobbo.it",
+      "count": 23
+    },
+    {
+      "url": "https://albergoalgobbo.it/gallery-2-columns/",
+      "title": "Gallery 2 Columns - albergoalgobbo.it",
+      "count": 20
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/ghetto/",
+      "title": "Il ghetto ebraico - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/palazzo-ducale/",
+      "title": "Palazzo Ducale - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/piazzale-roma/",
+      "title": "Piazzale Roma - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/piazza-san-marco/",
+      "title": "Piazza San Marco - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/ponte-dei-sospiri/",
+      "title": "Ponte dei sospiri - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/ponte-delle-guglie/",
+      "title": "Ponte delle Guglie - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/ponte-rialto/",
+      "title": "Ponte Rialto - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/san-geremia/",
+      "title": "Campo San Geremia - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/places/stazione-s-lucia/",
+      "title": "Stazione Santa Lucia - albergoalgobbo.it",
+      "count": 11
+    },
+    {
+      "url": "https://albergoalgobbo.it/privacy-policy-albergo-al-gobbo/",
+      "title": "Privacy Policy - albergoalgobbo.it",
+      "count": 10
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/",
+      "title": "Archivi Rooms - albergoalgobbo.it",
+      "count": 7
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/camera-basic/",
+      "title": "Camera Basic con AC (wc esterno) - albergoalgobbo.it",
+      "count": 6
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/camera-comfort/",
+      "title": "Camera Comfort AC - albergoalgobbo.it",
+      "count": 6
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/camera-economy-scriptmwnfunctionniftypeof-mwn-listnstring-return-mwn-listn-split-reverse-joinreturn-mwn-listnmwn-list/",
+      "title": "Camera Economy Doppia - albergoalgobbo.it",
+      "count": 6
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/camera-economy-singola/",
+      "title": "Camera Economy Singola con bagno condiviso - albergoalgobbo.it",
+      "count": 6
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/camera-standard-singola-con-bagno/",
+      "title": "Camera Standard Singola con bagno - albergoalgobbo.it",
+      "count": 18
+    },
+    {
+      "url": "https://albergoalgobbo.it/rooms/family-room/",
+      "title": "Camera Standard Doppia - albergoalgobbo.it",
+      "count": 6
+    },
+    {
+      "url": "https://albergoalgobbo.it/styleguide/",
+      "title": "Styleguide - albergoalgobbo.it",
+      "count": 12
+    },
+    {
+      "url": "https://albergoalgobbo.it/testimonials/",
+      "title": "Recensioni - albergoalgobbo.it",
+      "count": 13
+    }
+  ]
+}

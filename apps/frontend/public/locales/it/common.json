@@ -1,0 +1,467 @@
+{
+  "nav": {
+    "home": "Home",
+    "booking": "Prenota",
+    "about": "Chi siamo",
+    "gallery": "Galleria",
+    "contacts": "Contatti"
+  },
+  "footer": {
+    "navigation": "Navigazione",
+    "contacts": "Contatti",
+    "tagline": "Nel cuore di Venezia dal 1930",
+    "allRightsReserved": "Tutti i diritti riservati.",
+    "legalNotes": "Note Legali",
+    "privacy": "Privacy",
+    "cookiePolicy": "Cookie Policy",
+    "address": "Campo San Geremia 312, Cannaregio, 30121 Venezia",
+    "phone": "+39 041 715125",
+    "email": "info@albergoalgobbo.it"
+  },
+  "buttons": {
+    "learnMore": "Scopri di più",
+    "contactUs": "Contattaci",
+    "send": "Invia",
+    "accept": "Accetta",
+    "decline": "Rifiuta",
+    "backToHome": "Torna alla Home",
+    "reloadPage": "Ricarica pagina",
+    "bookNow": "Prenota ora",
+    "checkAvailability": "Cerca disponibilità"
+  },
+  "aria": {
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mainNavigation": "Navigazione principale",
+    "mobileNavigation": "Navigazione mobile",
+    "scrollDown": "Scorri verso il basso",
+    "close": "Chiudi",
+    "backToTop": "Torna in cima",
+    "loading": "Caricamento",
+    "skipToContent": "Vai al contenuto principale",
+    "login": "Area riservata",
+    "adminNavigation": "Navigazione area riservata",
+    "languageSwitcher": "Cambia lingua"
+  },
+  "contact": {
+    "address": "Campo San Geremia 312",
+    "city": "Cannaregio, 30121 Venezia",
+    "email": "info@albergoalgobbo.it",
+    "phone": "+39 041 715125"
+  },
+  "contacts": {
+    "hero": {
+      "title": "Contatti",
+      "subtitle": "Siamo qui per aiutarti. Scrivici o vieni a trovarci nel cuore di Venezia."
+    },
+    "info": {
+      "title": "Dove siamo",
+      "addressLabel": "Indirizzo",
+      "phoneLabel": "Telefono",
+      "emailLabel": "Email"
+    },
+    "form": {
+      "title": "Scrivici",
+      "subtitle": "Compila il modulo e ti risponderemo entro 24 ore.",
+      "name": "Nome e cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "message": "Messaggio",
+      "privacy": "Acconsento al trattamento dei miei dati personali ai sensi dell'informativa sulla privacy",
+      "privacyLink": "informativa sulla privacy",
+      "submit": "Invia messaggio",
+      "sending": "Invio in corso",
+      "validation": {
+        "name": "Inserisci almeno 2 caratteri",
+        "email": "Inserisci un indirizzo email valido",
+        "message": "Il messaggio deve contenere almeno 10 caratteri",
+        "privacy": "Devi acconsentire al trattamento dei dati"
+      },
+      "successTitle": "Messaggio inviato",
+      "successMessage": "Grazie per averci contattato. Ti risponderemo al più presto.",
+      "errorTitle": "Errore nell'invio",
+      "errorMessage": "Non è stato possibile inviare il messaggio. Riprova più tardi o scrivici direttamente via email."
+    },
+    "map": {
+      "title": "Ci trovi qui"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy e cookie policy",
+      "subtitle": "Trasparenza sui tuoi dati e sulle tecnologie usate dal sito."
+    },
+    "tocTitle": "Indice",
+    "tocLabel": "Indice della pagina",
+    "lastUpdated": "Ultimo aggiornamento: 6 agosto 2026",
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introduzione",
+        "paragraphs": [
+          "La tua privacy è importante per noi. Questa pagina spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali, nonché l'uso dei cookie sul sito albergoalgobbo.it.",
+          "Navigando nel sito e utilizzando i nostri formuli di contatto o di prenotazione, accetti le pratiche descritte in questa informativa."
+        ]
+      },
+      {
+        "id": "titolare",
+        "title": "Titolare del trattamento",
+        "paragraphs": [
+          "Il titolare del trattamento dei dati è:",
+          "Albergo Al Gobbo\nCampo San Geremia 312\n30121 Venezia (VE)\nEmail: info@albergoalgobbo.it\nTelefono: +39 041 715125"
+        ]
+      },
+      {
+        "id": "dati",
+        "title": "Dati raccolti e finalità",
+        "paragraphs": [
+          "Raccogliamo i dati che ci fornisci volontariamente attraverso i formuli di contatto e di prenotazione: nome, cognome, indirizzo email, numero di telefono e contenuto del messaggio. Questi dati sono utilizzati esclusivamente per rispondere alle tue richieste, gestire le prenotazioni e fornirti le informazioni necessarie.",
+          "Raccogliamo inoltre dati di navigazione in forma anonima e aggregata (ad esempio il tipo di browser, il sistema operativo e le pagine visitate) per migliorare l'esperienza sul sito e rilevare eventuali problemi tecnici."
+        ]
+      },
+      {
+        "id": "base",
+        "title": "Base giuridica e conservazione",
+        "paragraphs": [
+          "Il trattamento dei dati personali si basa sul tuo consenso, espresso compilando e inviando i formuli, o sull'esecuzione di misure precontrattuali quando ci contatti per una prenotazione.",
+          "I dati di contatto sono conservati per il tempo strettamente necessario a gestire la tua richiesta e, in ogni caso, non oltre 24 mesi dall'ultimo contatto, salvo obblighi di legge diversi."
+        ]
+      },
+      {
+        "id": "cookie",
+        "title": "Cookie",
+        "paragraphs": [
+          "I cookie sono piccoli file di testo che i siti visitati inviano al browser dell'utente, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.",
+          "Utilizziamo le seguenti categorie di cookie:"
+        ],
+        "list": [
+          "Cookie tecnici e necessari: essenziali per il funzionamento del sito, ad esempio per ricordare la lingua selezionata e gestire il consenso ai cookie.",
+          "Cookie analitici: raccolgono informazioni statistiche anonime sulle visite e sull'uso del sito, utili per migliorarne i contenuti. Vengono installati solo se ci dai il consenso.",
+          "Cookie di marketing: utilizzati per proporti contenuti personalizzati e annunci pertinenti. Vengono installati solo se ci dai il consenso."
+        ]
+      },
+      {
+        "id": "gestione",
+        "title": "Gestione dei cookie",
+        "paragraphs": [
+          "Puoi modificare le tue preferenze sui cookie in qualsiasi momento cliccando sul banner informativo presente sul sito oppure attraverso le impostazioni del tuo browser.",
+          "La maggior parte dei browser permette di visualizzare, gestire ed eliminare i cookie installati. Ti invitiamo a consultare la guida del tuo browser per le istruzioni specifiche."
+        ]
+      },
+      {
+        "id": "diritti",
+        "title": "Diritti degli interessati",
+        "paragraphs": [
+          "Hai diritto di accedere ai tuoi dati personali, chiederne la rettifica, la cancellazione, la limitazione del trattamento o opporti al loro utilizzo. Puoi esercitare questi diritti in qualsiasi momento scrivendo a info@albergoalgobbo.it.",
+          "Se ritieni che il trattamento dei tuoi dati violi la normativa vigente, hai anche il diritto di proporre reclamo al Garante per la protezione dei dati personali."
+        ]
+      },
+      {
+        "id": "modifiche",
+        "title": "Modifiche all'informativa",
+        "paragraphs": [
+          "Ci riserviamo il diritto di aggiornare la presente informativa per adeguarla a eventuali cambiamenti normativi o miglioramenti del servizio. Ti invitiamo a consultare questa pagina periodicamente per essere sempre informato."
+        ]
+      }
+    ]
+  },
+  "login": {
+    "hero": {
+      "title": "Area riservata",
+      "subtitle": "Accesso riservato alla gestione dell'albergo."
+    },
+    "form": {
+      "username": "Nome utente",
+      "password": "Password",
+      "submit": "Accedi",
+      "submitting": "Accesso in corso..."
+    },
+    "error": {
+      "invalidCredentials": "Nome utente o password non validi."
+    },
+    "message": {
+      "title": "Accesso in attivazione",
+      "text": "L'area riservata sarà presto disponibile. Per informazioni scrivi a info@albergoalgobbo.it.",
+      "back": "Torna al login"
+    }
+  },
+  "admin": {
+    "title": "Area riservata",
+    "logout": "Esci",
+    "nav": {
+      "rooms": "Camere",
+      "bookings": "Prenotazioni"
+    },
+    "rooms": {
+      "title": "Gestione camere",
+      "subtitle": "Modifica prezzi e immagini, aggiungi o elimina camere, gestisci le occupazioni per date.",
+      "name": "Camera",
+      "capacity": "Posti",
+      "price": "Prezzo da",
+      "guests": "ospiti",
+      "addRoom": "Aggiungi camera",
+      "add": "Aggiungi",
+      "newName": "Nome camera",
+      "newCapacity": "Posti letto",
+      "newPrice": "Prezzo base",
+      "image": "Immagine",
+      "zoomImage": "Ingrandisci immagine",
+      "uploadImage": "Carica immagine",
+      "changeImage": "Cambia immagine",
+      "removeImage": "Rimuovi immagine",
+      "actions": "Azioni",
+      "delete": "Elimina camera",
+      "deleteTitle": "Conferma eliminazione",
+      "deleteConfirm": "Sei sicuro di voler eliminare la camera \"{{name}}\"? L'azione non può essere annullata.",
+      "deleteCancel": "Annulla",
+      "deleteConfirmButton": "Elimina",
+      "saveChanges": "Salva modifiche",
+      "discardChanges": "Annulla modifiche",
+      "unsavedChanges": "Modifiche non salvate",
+      "unavailabilityTitle": "Indisponibilità",
+      "unavailabilitySubtitle": "Imposta i periodi in cui una camera risulta non disponibile. Selezionando 'Prenotazione' il record viene aggiunto alla sezione Prenotazioni.",
+      "unavailabilityRoom": "Camera",
+      "unavailabilitySelectRoom": "Seleziona camera",
+      "unavailabilityType": "Tipo",
+      "unavailabilityTypeBooking": "Prenotazione",
+      "unavailabilityTypeOther": "Altro",
+      "unavailabilityFrom": "Dal",
+      "unavailabilityTo": "Al",
+      "unavailabilityIndeterminate": "Tempo indeterminato",
+      "unavailabilityGuestName": "Nome e cognome",
+      "unavailabilityGuestEmail": "Email",
+      "unavailabilityGuestPhone": "Cellulare",
+      "unavailabilityNote": "Nota",
+      "unavailabilityAdd": "Aggiungi indisponibilità",
+      "unavailabilityEmpty": "Nessuna indisponibilità inserita.",
+      "unavailabilityDelete": "Elimina indisponibilità",
+      "unavailabilityDeleteTitle": "Conferma eliminazione",
+      "unavailabilityDeleteConfirm": "Sei sicuro di voler eliminare l'indisponibilità della camera \"{{name}}\" dal {{start}} al {{end}}?",
+      "unavailabilityDeleteCancel": "Annulla",
+      "unavailabilityDeleteConfirmButton": "Elimina"
+    },
+    "bookings": {
+      "title": "Prenotazioni",
+      "subtitle": "Visualizza e aggiorna lo stato delle richieste di prenotazione.",
+      "filter": "Stato",
+      "empty": "Nessuna prenotazione corrisponde al filtro selezionato.",
+      "changeStatus": "Cambia stato",
+      "delete": "Elimina prenotazione",
+      "deleteTitle": "Conferma eliminazione",
+      "deleteConfirm": "Sei sicuro di voler eliminare la prenotazione di {{name}} per la camera {{room}}? L'azione non può essere annullata.",
+      "deleteCancel": "Annulla",
+      "deleteConfirmButton": "Elimina",
+      "saveChanges": "Salva modifiche",
+      "discardChanges": "Annulla modifiche",
+      "unsavedChanges": "Modifiche non salvate",
+      "status": {
+        "all": "Tutte",
+        "pending": "In attesa",
+        "confirmed": "Confermata",
+        "cancelled": "Annullata"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Albergo Al Gobbo",
+      "subtitle": "Nel cuore di Venezia, a due passi dalla stazione",
+      "microcopy": "Famiglia Vinco · Accoglienza dal 1930",
+      "ctaPrimary": "Prenota il tuo soggiorno",
+      "ctaSecondary": "Scopri l'albergo"
+    },
+    "highlights": {
+      "since": "Dal 1930",
+      "sinceLabel": "Storia familiare",
+      "station": "2 minuti",
+      "stationLabel": "Dalla stazione Santa Lucia",
+      "wifi": "WiFi gratis",
+      "wifiLabel": "In tutta la struttura",
+      "cleaning": "Pulizia giornaliera",
+      "cleaningLabel": "Per il tuo comfort"
+    },
+    "welcome": {
+      "eyebrow": "Benvenuti",
+      "title": "Un piccolo albergo, una grande accoglienza",
+      "text": "L'Albergo Al Gobbo è un piccolo hotel a conduzione familiare situato nel cuore di Venezia, in Campo San Geremia. Fondato nel 1930 dalla Signora Maria Vinco, è oggi gestito dalla famiglia Vinco che cura l'accoglienza da tre generazioni. Piccolo, pulito e a pochi passi dalla stazione: qui ti sentirai come a casa."
+    },
+    "rooms": {
+      "eyebrow": "Le camere",
+      "title": "Scegli la soluzione più adatta al tuo soggiorno",
+      "subtitle": "Dalla camera Economy alla Comfort con aria condizionata, troverai la sistemazione giusta per visitare Venezia in tutta tranquillità.",
+      "cta": "Vedi tutte le camere"
+    },
+    "services": {
+      "eyebrow": "I servizi",
+      "title": "Tutto ciò che ti serve per sentirti a casa",
+      "subtitle": "WiFi gratuito, aria condizionata, colazione su richiesta e pulizia giornaliera: i piccoli dettagli che fanno la differenza.",
+      "wifi": {
+        "title": "WiFi gratuito",
+        "description": "Connessione WiFi gratuita disponibile in tutte le camere e negli spazi comuni."
+      },
+      "ac": {
+        "title": "Aria condizionata",
+        "description": "Camere dotate di aria condizionata per il massimo comfort nelle giornate più calde."
+      },
+      "heating": {
+        "title": "Riscaldamento",
+        "description": "Riscaldamento autonomo per un soggiorno confortevole anche in inverno."
+      },
+      "breakfast": {
+        "title": "Colazione su richiesta",
+        "description": "Possibilità di richiedere la colazione per iniziare la giornata con energia."
+      },
+      "cleaning": {
+        "title": "Pulizia giornaliera",
+        "description": "Le camere vengono rinfrescate e pulite ogni giorno con cura."
+      },
+      "pets": {
+        "title": "Animali ammessi",
+        "description": "Accogliamo gli amici a quattro zampe su richiesta, per non lasciarli a casa."
+      }
+    },
+    "location": {
+      "eyebrow": "Dove siamo",
+      "title": "Nel cuore di Venezia",
+      "text": "Campo San Geremia 312, a due passi dalla stazione ferroviaria Santa Lucia, da Piazzale Roma e dall'approdo per l'aeroporto Marco Polo. Rialto e San Marco sono raggiungibili a piedi con una piacevole passeggiata.",
+      "cta": "Come raggiungerci"
+    },
+    "reviews": {
+      "eyebrow": "Dicono di noi",
+      "title": "Parola degli ospiti",
+      "review1": "Posizione perfetta, proprietari gentilissimi e camera pulitissima. Torneremo sicuramente.",
+      "reviewer1": "Claudio M.",
+      "review2": "Piccolo albergo con grande cuore. Ci siamo sentiti accolti come a casa.",
+      "reviewer2": "Samantha A.",
+      "review3": "Ottimo rapporto qualità-prezzo a due minuti dalla stazione. Consigliato!",
+      "reviewer3": "Alessandro A."
+    },
+    "ctaBanner": {
+      "title": "Pronto per vivere Venezia?",
+      "button": "Prenota ora"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "La nostra storia",
+      "subtitle": "Tre generazioni di accoglienza veneziana della famiglia Vinco"
+    },
+    "story": {
+      "title": "Un albergo, una famiglia",
+      "text": "L'Albergo Al Gobbo nasce nel 1930 dalla Signora Maria Vinco, che aprì le porte della sua casa ai viaggiatori in cerca di un rifugio accogliente nel cuore di Venezia. Da allora, per quasi un secolo, la famiglia Vinco ha custodito lo stesso spirito: piccole attenzioni, pulizia impeccabile e un sorriso sincero per chi arriva da lontano. Oggi, nella terza generazione, continuiamo a offrire un soggiorno semplice e autentico, a due passi dalla stazione e dai luoghi più belli della città.",
+      "imageAlt": "Hall dell'Albergo Al Gobbo"
+    },
+    "timeline": {
+      "title": "Quasi un secolo di accoglienza",
+      "subtitle": "Dal primo ospite a oggi, la stessa cura per i dettagli.",
+      "milestone1": {
+        "year": "1930",
+        "title": "Le origini",
+        "description": "Maria Vinco apre le porte della sua casa trasformandola in un piccolo albergo nel cuore di Cannaregio."
+      },
+      "milestone2": {
+        "year": "1980",
+        "title": "Un nuovo slancio",
+        "description": "La famiglia rinnova la struttura mantenendo intatta l'atmosfera familiare che gli ospiti apprezzano."
+      },
+      "milestone3": {
+        "year": "Oggi",
+        "title": "La terza generazione",
+        "description": "Continuiamo a dare il benvenuto a viaggiatori da tutto il mondo con la stessa dedizione di sempre."
+      }
+    },
+    "attractions": {
+      "title": "Intorno a noi",
+      "subtitle": "Dall'albergo puoi raggiungere a piedi i luoghi più belli di Venezia. Clicca su una scheda per scoprire la storia."
+    },
+    "award": {
+      "title": "Premio di Servizio Eccezionale",
+      "text": "Riconoscimento ricevuto da Gohotels.com per l'ospitalità e la qualità del servizio offerto ai nostri ospiti nel corso degli anni.",
+      "cta": "Prenota il tuo soggiorno"
+    }
+  },
+  "booking": {
+    "hero": {
+      "title": "Prenota il tuo soggiorno",
+      "subtitle": "Scegli le date e trova la camera perfetta per la tua Venezia"
+    },
+    "form": {
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "adults": "Adulti",
+      "children": "Bambini",
+      "errors": {
+        "required": "Seleziona check-in e check-out",
+        "pastDate": "La data di check-in non può essere nel passato",
+        "invalidDates": "Il check-out deve essere successivo al check-in",
+        "guests": "Seleziona almeno un ospite"
+      }
+    },
+    "services": {
+      "bathroom": "Bagno privato"
+    },
+    "rooms": {
+      "title": "Le nostre camere",
+      "subtitleInitial": "Seleziona le date per vedere le camere disponibili",
+      "subtitleSearched": "Camere disponibili per le date selezionate",
+      "hint": "Seleziona le date e il numero di ospiti, poi clicca Cerca disponibilità.",
+      "noResults": "Nessuna camera disponibile per la combinazione scelta. Contattaci per una soluzione personalizzata."
+    },
+    "disclaimer": "Le disponibilità sono indicative. Riceverai conferma della prenotazione tramite email o telefono.",
+    "help": {
+      "title": "Hai bisogno di aiuto?",
+      "subtitle": "Siamo a disposizione per aiutarti a pianificare il tuo soggiorno"
+    },
+    "modal": {
+      "title": "Richiedi prenotazione",
+      "successTitle": "Richiesta inviata",
+      "successText": "Grazie! Ti contatteremo presto per confermare la disponibilità.",
+      "nameLabel": "Nome e cognome",
+      "emailLabel": "Email",
+      "phoneLabel": "Telefono",
+      "messageLabel": "Messaggio",
+      "nightSingular": "notte",
+      "nightPlural": "notti",
+      "adults": "adulti",
+      "children": "bambini",
+      "total": "Totale stimato"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Galleria",
+      "subtitle": "Un viaggio visivo tra hall, camere, colazione e gli scorci veneziani che rendono il tuo soggiorno autentico"
+    },
+    "lightbox": {
+      "title": "Anteprima immagine",
+      "prev": "Immagine precedente",
+      "next": "Immagine successiva",
+      "of": "di"
+    }
+  },
+  "cookie": {
+    "title": "Consenso cookie",
+    "message": "Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti l'uso dei cookie.",
+    "learnMore": "Scopri di più",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta",
+    "customize": "Personalizza",
+    "preferencesTitle": "Preferenze Cookie",
+    "preferencesDescription": "Gestisci le tue preferenze sui cookie. I cookie necessari sono sempre attivi.",
+    "necessary": "Necessari",
+    "necessaryDesc": "Essenziali per il funzionamento del sito.",
+    "analytics": "Analitici",
+    "analyticsDesc": "Ci aiutano a capire come usi il sito.",
+    "marketing": "Marketing",
+    "marketingDesc": "Per contenuti e pubblicità personalizzati.",
+    "alwaysOn": "Sempre attivi",
+    "on": "Attivo",
+    "off": "Disattivo",
+    "cancel": "Annulla",
+    "savePreferences": "Salva preferenze"
+  },
+  "error": {
+    "title": "Ops! Qualcosa è andato storto",
+    "description": "Si è verificato un errore imprevisto. Prova a ricaricare la pagina o torna alla homepage."
+  }
+}

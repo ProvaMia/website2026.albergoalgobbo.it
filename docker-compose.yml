@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    image: brochure-backend:latest
+    container_name: brochure-backend
+    restart: unless-stopped
+    env_file:
+      - .env.local
+    environment:
+      NODE_ENV: production
+      API_PORT: 3001
+    ports:
+      - "3001:3001"
+    networks:
+      - brochure
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    image: brochure-frontend:latest
+    container_name: brochure-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+    networks:
+      - brochure
+
+networks:
+  brochure:
+    driver: bridge

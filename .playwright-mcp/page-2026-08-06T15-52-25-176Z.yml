@@ -1,0 +1,187 @@
+- generic [ref=f2e2]:
+  - link "Vai al contenuto principale" [ref=f2e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e4]:
+    - navigation "Navigazione principale" [ref=f2e5]:
+      - link [ref=f2e6] [cursor=pointer]:
+        - /url: /it
+        - img "Albergo Al Gobbo" [ref=f2e7]
+      - button "Apri menu" [ref=f2e8] [cursor=pointer]
+  - main [ref=f2e10]:
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]:
+        - generic [ref=f2e17]:
+          - generic [ref=f2e18]: Benvenuti
+          - heading "Un piccolo albergo, una grande accoglienza" [level=2] [ref=f2e19]
+        - paragraph [ref=f2e20]: "L'Albergo Al Gobbo è un piccolo hotel a conduzione familiare situato nel cuore di Venezia, in Campo San Geremia. Fondato nel 1930 dalla Signora Maria Vinco, è oggi gestito dalla famiglia Vinco che cura l'accoglienza da tre generazioni. Piccolo, pulito e a pochi passi dalla stazione: qui ti sentirai come a casa."
+      - img "Hall dell'Albergo Al Gobbo" [ref=f2e22]
+    - generic [ref=f2e24]:
+      - generic [ref=f2e25]:
+        - generic [ref=f2e26]: Le camere
+        - heading "Scegli la soluzione più adatta al tuo soggiorno" [level=2] [ref=f2e27]
+        - paragraph [ref=f2e28]: Dalla camera Economy alla Comfort con aria condizionata, troverai la sistemazione giusta per visitare Venezia in tutta tranquillità.
+      - generic [ref=f2e29]:
+        - article [ref=f2e30]:
+          - generic [ref=f2e31]:
+            - img "Comfort AC" [ref=f2e32]
+            - generic [ref=f2e33]: da €95/notte
+          - generic [ref=f2e34]:
+            - heading "Comfort AC" [level=3] [ref=f2e35]
+            - paragraph [ref=f2e36]: Camera doppia spaziosa con aria condizionata, bagno privato, WiFi gratuito e tutti i comfort per il tuo soggiorno veneziano.
+            - generic [ref=f2e37]: 2 adulti
+            - list [ref=f2e44]:
+              - listitem [ref=f2e45]:
+                - generic [ref=f2e50]: wifi
+              - listitem [ref=f2e51]:
+                - generic [ref=f2e56]: ac
+              - listitem [ref=f2e57]:
+                - generic [ref=f2e61]: bathroom
+            - link "Prenota" [ref=f2e62] [cursor=pointer]:
+              - /url: /it/prenota
+        - article [ref=f2e63]:
+          - generic [ref=f2e64]:
+            - img "Standard Singola" [ref=f2e65]
+            - generic [ref=f2e66]: da €65/notte
+          - generic [ref=f2e67]:
+            - heading "Standard Singola" [level=3] [ref=f2e68]
+            - paragraph [ref=f2e69]: Camera singola con bagno privato, ideale per viaggiatori indipendenti che cercano una sistemazione centrale e confortevole.
+            - generic [ref=f2e70]: 1 adulto
+            - list [ref=f2e77]:
+              - listitem [ref=f2e78]:
+                - generic [ref=f2e83]: wifi
+              - listitem [ref=f2e84]:
+                - generic [ref=f2e88]: bathroom
+            - link "Prenota" [ref=f2e89] [cursor=pointer]:
+              - /url: /it/prenota
+        - article [ref=f2e90]:
+          - generic [ref=f2e91]:
+            - img "Economy Doppia" [ref=f2e92]
+            - generic [ref=f2e93]: da €55/notte
+          - generic [ref=f2e94]:
+            - heading "Economy Doppia" [level=3] [ref=f2e95]
+            - paragraph [ref=f2e96]: Soluzione economica per due persone, perfetta per chi desidera scoprire Venezia spendendo poco senza rinunciare alla pulizia e all'accoglienza.
+            - generic [ref=f2e97]: 2 adulti
+            - list [ref=f2e104]:
+              - listitem [ref=f2e105]:
+                - generic [ref=f2e110]: wifi
+            - link "Prenota" [ref=f2e111] [cursor=pointer]:
+              - /url: /it/prenota
+      - link "Vedi tutte le camere" [ref=f2e113] [cursor=pointer]:
+        - /url: /it/prenota
+    - generic [ref=f2e115]:
+      - generic [ref=f2e116]:
+        - generic [ref=f2e117]: I servizi
+        - heading "Tutto ciò che ti serve per sentirti a casa" [level=2] [ref=f2e118]
+        - paragraph [ref=f2e119]: "WiFi gratuito, aria condizionata, colazione su richiesta e pulizia giornaliera: i piccoli dettagli che fanno la differenza."
+      - generic [ref=f2e120]:
+        - generic [ref=f2e121]:
+          - heading "WiFi gratuito" [level=3] [ref=f2e127]
+          - paragraph [ref=f2e128]: Connessione WiFi gratuita disponibile in tutte le camere e negli spazi comuni.
+        - generic [ref=f2e129]:
+          - heading "Aria condizionata" [level=3] [ref=f2e135]
+          - paragraph [ref=f2e136]: Camere dotate di aria condizionata per il massimo comfort nelle giornate più calde.
+        - generic [ref=f2e137]:
+          - heading "Riscaldamento" [level=3] [ref=f2e141]
+          - paragraph [ref=f2e142]: Riscaldamento autonomo per un soggiorno confortevole anche in inverno.
+        - generic [ref=f2e143]:
+          - heading "Colazione su richiesta" [level=3] [ref=f2e147]
+          - paragraph [ref=f2e148]: Possibilità di richiedere la colazione per iniziare la giornata con energia.
+        - generic [ref=f2e149]:
+          - heading "Pulizia giornaliera" [level=3] [ref=f2e153]
+          - paragraph [ref=f2e154]: Le camere vengono rinfrescate e pulite ogni giorno con cura.
+        - generic [ref=f2e155]:
+          - heading "Animali ammessi" [level=3] [ref=f2e162]
+          - paragraph [ref=f2e163]: Accogliamo gli amici a quattro zampe su richiesta, per non lasciarli a casa.
+    - generic [ref=f2e166]:
+      - generic [ref=f2e167]:
+        - img "Vista dell'Albergo Al Gobbo su Campo San Geremia"
+      - generic [ref=f2e168]:
+        - generic [ref=f2e169]:
+          - generic [ref=f2e170]: Dove siamo
+          - heading "Nel cuore di Venezia" [level=2] [ref=f2e171]
+        - paragraph [ref=f2e172]: Campo San Geremia 312, a due passi dalla stazione ferroviaria Santa Lucia, da Piazzale Roma e dall'approdo per l'aeroporto Marco Polo. Rialto e San Marco sono raggiungibili a piedi con una piacevole passeggiata.
+        - generic [ref=f2e173]:
+          - generic [ref=f2e174]: Campo San Geremia 312, Cannaregio, 30121 Venezia
+          - link "+39 041 715125" [ref=f2e182] [cursor=pointer]:
+            - /url: tel:+39041715125
+          - link "info@albergoalgobbo.it" [ref=f2e187] [cursor=pointer]:
+            - /url: mailto:info@albergoalgobbo.it
+          - generic [ref=f2e188]: Check-in su appuntamento
+        - link "Come raggiungerci" [ref=f2e194] [cursor=pointer]:
+          - /url: /it/contatti
+    - generic [ref=f2e196]:
+      - generic [ref=f2e197]:
+        - generic [ref=f2e198]: Dicono di noi
+        - heading "Parola degli ospiti" [level=2] [ref=f2e199]
+      - generic [ref=f2e200]:
+        - generic [ref=f2e201]:
+          - blockquote [ref=f2e213]: "\"Posizione perfetta, proprietari gentilissimi e camera pulitissima. Torneremo sicuramente.\""
+          - generic [ref=f2e214]:
+            - img "Claudio M." [ref=f2e215]
+            - generic [ref=f2e216]: Claudio M.
+        - generic [ref=f2e217]:
+          - blockquote [ref=f2e229]: "\"Piccolo albergo con grande cuore. Ci siamo sentiti accolti come a casa.\""
+          - generic [ref=f2e230]:
+            - img "Samantha A." [ref=f2e231]
+            - generic [ref=f2e232]: Samantha A.
+        - generic [ref=f2e233]:
+          - blockquote [ref=f2e245]: "\"Ottimo rapporto qualità-prezzo a due minuti dalla stazione. Consigliato!\""
+          - generic [ref=f2e246]:
+            - img "Alessandro A." [ref=f2e247]
+            - generic [ref=f2e248]: Alessandro A.
+    - generic [ref=f2e250]:
+      - heading "Pronto per vivere Venezia?" [level=2] [ref=f2e251]
+      - link "Prenota ora" [ref=f2e252] [cursor=pointer]:
+        - /url: /it/prenota
+  - contentinfo [ref=f2e253]:
+    - generic [ref=f2e254]:
+      - generic [ref=f2e255]:
+        - generic [ref=f2e256]:
+          - img "Albergo Al Gobbo"
+          - paragraph [ref=f2e257]: Nel cuore di Venezia dal 1930
+        - generic [ref=f2e258]:
+          - heading "Navigazione" [level=3] [ref=f2e259]
+          - list [ref=f2e260]:
+            - listitem [ref=f2e261]:
+              - link "Home" [ref=f2e262] [cursor=pointer]:
+                - /url: /it
+            - listitem [ref=f2e263]:
+              - link "Prenota" [ref=f2e264] [cursor=pointer]:
+                - /url: /it/prenota
+            - listitem [ref=f2e265]:
+              - link "Chi siamo" [ref=f2e266] [cursor=pointer]:
+                - /url: /it/chi-siamo
+            - listitem [ref=f2e267]:
+              - link "Galleria" [ref=f2e268] [cursor=pointer]:
+                - /url: /it/galleria
+            - listitem [ref=f2e269]:
+              - link "Contatti" [ref=f2e270] [cursor=pointer]:
+                - /url: /it/contatti
+        - generic [ref=f2e271]:
+          - heading "Contatti" [level=3] [ref=f2e272]
+          - list [ref=f2e273]:
+            - listitem [ref=f2e274]:
+              - generic [ref=f2e278]: Campo San Geremia 312, Cannaregio, 30121 Venezia
+            - listitem [ref=f2e279]:
+              - link "+39 041 715125" [ref=f2e282] [cursor=pointer]:
+                - /url: tel:+39041715125
+            - listitem [ref=f2e283]:
+              - link "info@albergoalgobbo.it" [ref=f2e287] [cursor=pointer]:
+                - /url: mailto:info@albergoalgobbo.it
+      - generic [ref=f2e288]:
+        - paragraph [ref=f2e289]: © 2026 Albergo Al Gobbo — Tutti i diritti riservati.
+        - generic [ref=f2e290]:
+          - link "Privacy" [ref=f2e291] [cursor=pointer]:
+            - /url: /it/privacy
+          - generic [ref=f2e292]: "|"
+          - button "Cookie Policy" [ref=f2e293] [cursor=pointer]
+  - dialog "Consenso cookie" [ref=f2e294]:
+    - paragraph [ref=f2e295]:
+      - text: Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti l'uso dei cookie.
+      - link "Scopri di più" [ref=f2e296] [cursor=pointer]:
+        - /url: /it/privacy
+    - generic [ref=f2e297]:
+      - generic [ref=f2e298]:
+        - button "Accetta tutti" [ref=f2e299] [cursor=pointer]
+        - button "Rifiuta" [ref=f2e300] [cursor=pointer]
+      - button "Personalizza" [ref=f2e301] [cursor=pointer]
