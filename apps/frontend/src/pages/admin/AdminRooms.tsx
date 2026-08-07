@@ -356,7 +356,7 @@ export function AdminRooms() {
           {t('admin.rooms.addRoom')}
         </h3>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+          <div className="min-w-0 lg:col-span-2">
             <label htmlFor="new-name" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.newName')}
             </label>
@@ -399,7 +399,7 @@ export function AdminRooms() {
             />
           </div>
 
-          <div className="lg:col-span-2">
+          <div className="min-w-0 lg:col-span-2">
             <span className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.image')}
             </span>
@@ -548,8 +548,8 @@ export function AdminRooms() {
           </p>
         </div>
 
-        <form onSubmit={addUnavailability} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+        <form onSubmit={addUnavailability} className="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="min-w-0 lg:col-span-2">
             <label htmlFor="unavailability-room" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.unavailabilityRoom')}
             </label>
@@ -568,7 +568,7 @@ export function AdminRooms() {
             </select>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <label htmlFor="unavailability-type" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.unavailabilityType')}
             </label>
@@ -587,32 +587,38 @@ export function AdminRooms() {
             </select>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <label htmlFor="unavailability-start" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.unavailabilityFrom')}
             </label>
-            <input
-              id="unavailability-start"
-              type="date"
-              value={unavailabilityStart}
-              onChange={(e) => setUnavailabilityStart(e.target.value)}
-              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
-            />
+            <div className="relative flex min-w-0 overflow-hidden">
+              <input
+                id="unavailability-start"
+                type="date"
+                value={unavailabilityStart}
+                onChange={(e) => setUnavailabilityStart(e.target.value)}
+                className="min-w-0 flex-1 max-w-full appearance-none border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+                style={{ minWidth: 0 }}
+              />
+            </div>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <label htmlFor="unavailability-end" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.unavailabilityTo')}
             </label>
-            <input
-              id="unavailability-end"
-              type="date"
-              value={unavailabilityEnd}
-              min={unavailabilityStart}
-              disabled={unavailabilityIndeterminate}
-              onChange={(e) => setUnavailabilityEnd(e.target.value)}
-              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none disabled:cursor-not-allowed disabled:bg-stone/10 disabled:text-stone"
-            />
+            <div className="relative flex min-w-0 overflow-hidden">
+              <input
+                id="unavailability-end"
+                type="date"
+                value={unavailabilityEnd}
+                min={unavailabilityStart}
+                disabled={unavailabilityIndeterminate}
+                onChange={(e) => setUnavailabilityEnd(e.target.value)}
+                className="min-w-0 flex-1 max-w-full appearance-none border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none disabled:cursor-not-allowed disabled:bg-stone/10 disabled:text-stone"
+                style={{ minWidth: 0 }}
+              />
+            </div>
           </div>
 
           {unavailabilityType === 'other' && (
@@ -635,7 +641,7 @@ export function AdminRooms() {
 
           {unavailabilityType === 'booking' && (
             <>
-              <div className="lg:col-span-2">
+              <div className="min-w-0 lg:col-span-2">
                 <label htmlFor="unavailability-guest-name" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
                   {t('admin.rooms.unavailabilityGuestName')}
                 </label>
@@ -647,7 +653,7 @@ export function AdminRooms() {
                   className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
                 />
               </div>
-              <div>
+              <div className="min-w-0">
                 <label htmlFor="unavailability-guest-email" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
                   {t('admin.rooms.unavailabilityGuestEmail')}
                 </label>
@@ -659,7 +665,7 @@ export function AdminRooms() {
                   className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
                 />
               </div>
-              <div>
+              <div className="min-w-0">
                 <label htmlFor="unavailability-guest-phone" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
                   {t('admin.rooms.unavailabilityGuestPhone')}
                 </label>
@@ -674,7 +680,7 @@ export function AdminRooms() {
             </>
           )}
 
-          <div className="sm:col-span-2 lg:col-span-4">
+          <div className="min-w-0 sm:col-span-2 lg:col-span-4">
             <label htmlFor="unavailability-note" className="mb-1 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
               {t('admin.rooms.unavailabilityNote')}
             </label>
