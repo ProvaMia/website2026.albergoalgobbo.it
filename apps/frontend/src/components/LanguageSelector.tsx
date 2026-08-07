@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Globe, Check } from 'lucide-react'
 import { supportedLanguages, type SupportedLanguage } from '@/i18n'
 import { localizedRoutes } from '@/i18n/routes'
 import { cn } from '@/lib/utils'
@@ -14,20 +14,19 @@ import { cn } from '@/lib/utils'
  */
 interface LanguageMeta {
   code: string
-  flag: string
   name: string
   short: string
 }
 
 const languagesMeta: LanguageMeta[] = [
-  { code: 'it', flag: '🇮🇹', name: 'Italiano', short: 'IT' },
-  { code: 'en', flag: '🇬🇧', name: 'English', short: 'EN' },
-  { code: 'fr', flag: '🇫🇷', name: 'Français', short: 'FR' },
-  { code: 'es', flag: '🇪🇸', name: 'Español', short: 'ES' },
-  { code: 'de', flag: '🇩🇪', name: 'Deutsch', short: 'DE' },
-  { code: 'pt', flag: '🇵🇹', name: 'Português', short: 'PT' },
-  { code: 'pl', flag: '🇵🇱', name: 'Polski', short: 'PL' },
-  { code: 'ja', flag: '🇯🇵', name: '日本語', short: 'JA' },
+  { code: 'it', name: 'Italiano', short: 'IT' },
+  { code: 'en', name: 'English', short: 'EN' },
+  { code: 'fr', name: 'Français', short: 'FR' },
+  { code: 'es', name: 'Español', short: 'ES' },
+  { code: 'de', name: 'Deutsch', short: 'DE' },
+  { code: 'pt', name: 'Português', short: 'PT' },
+  { code: 'pl', name: 'Polski', short: 'PL' },
+  { code: 'ja', name: '日本語', short: 'JA' },
 ]
 
 const languages = languagesMeta.filter(
@@ -117,7 +116,7 @@ export function LanguageSelector({
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             )}
           >
-            <span className="text-base">{lang.flag}</span>
+            <span className="text-xs uppercase tracking-wider">{lang.short}</span>
             {lang.name}
           </button>
         ))}
@@ -138,7 +137,7 @@ export function LanguageSelector({
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >
-        <span className="text-base leading-none">{currentLanguage.flag}</span>
+        <Globe className="h-4 w-4" aria-hidden="true" />
         <span>{currentLanguage.short}</span>
         <ChevronDown
           className={cn(
@@ -162,14 +161,16 @@ export function LanguageSelector({
               aria-selected={lang.code === currentLang}
               onClick={() => switchLanguage(lang.code)}
               className={cn(
-                'w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-left',
+                'w-full flex items-center justify-between px-4 py-2.5 text-sm transition-colors text-left',
                 lang.code === currentLang
                   ? 'bg-gray-100 text-gray-900 font-medium'
                   : 'text-gray-700 hover:bg-gray-50'
               )}
             >
-              <span className="text-base leading-none">{lang.flag}</span>
               <span>{lang.name}</span>
+              {lang.code === currentLang && (
+                <Check className="h-4 w-4 text-gold" aria-hidden="true" />
+              )}
             </button>
           ))}
         </div>
