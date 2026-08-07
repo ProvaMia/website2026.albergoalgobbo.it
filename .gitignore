@@ -20,6 +20,9 @@ playwright-report/
 playwright/.cache/
 .playwright-mcp/
 mobile-booking-form*.png
+admin-rooms-mobile*.png
+Preventivo*.pdf
+*.pdf
 
 # IDE
 .idea/
