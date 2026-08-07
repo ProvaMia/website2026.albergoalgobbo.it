@@ -8,7 +8,6 @@ const footerNavItems: { key: RouteKey; labelKey: string }[] = [
   { key: 'booking', labelKey: 'nav.booking' },
   { key: 'about', labelKey: 'nav.about' },
   { key: 'gallery', labelKey: 'nav.gallery' },
-  { key: 'contacts', labelKey: 'nav.contacts' },
 ]
 
 export function Footer() {
@@ -18,7 +17,7 @@ export function Footer() {
   return (
     <footer className="bg-night text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-10 justify-items-start lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img
               src="/media/logos/logo-al-gobbo-BIANCO.png"
@@ -31,7 +30,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="w-fit justify-self-center text-left">
+          <div>
             <h3 className="font-serif text-lg font-normal text-gold">{t('footer.navigation')}</h3>
             <ul className="mt-4 space-y-2">
               {footerNavItems.map(({ key, labelKey }) => (
@@ -47,7 +46,29 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="w-fit lg:justify-self-end">
+          <div>
+            <h3 className="font-serif text-lg font-normal text-gold">{t('footer.legal')}</h3>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <LocalizedLink
+                  to="privacy"
+                  className="inline-block font-sans text-sm font-light text-white/80 transition-colors hover:text-gold"
+                >
+                  {t('footer.privacy')}
+                </LocalizedLink>
+              </li>
+              <li>
+                <LocalizedLink
+                  to="privacy"
+                  className="inline-block font-sans text-sm font-light text-white/80 transition-colors hover:text-gold"
+                >
+                  {t('footer.cookiePolicy')}
+                </LocalizedLink>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="font-serif text-lg font-normal text-gold">{t('footer.contacts')}</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
@@ -80,21 +101,6 @@ export function Footer() {
           <p className="font-sans text-xs font-light text-white/50">
             © {year} Albergo Al Gobbo — {t('footer.allRightsReserved')}
           </p>
-          <div className="flex items-center gap-4">
-            <LocalizedLink
-              to="privacy"
-              className="font-sans text-xs font-light text-white/50 transition-colors hover:text-gold"
-            >
-              {t('footer.privacy')}
-            </LocalizedLink>
-            <span className="text-white/30" aria-hidden="true">|</span>
-            <LocalizedLink
-              to="privacy"
-              className="font-sans text-xs font-light text-white/50 transition-colors hover:text-gold"
-            >
-              {t('footer.cookiePolicy')}
-            </LocalizedLink>
-          </div>
         </div>
       </div>
     </footer>
