@@ -49,7 +49,7 @@ export const rooms: Room[] = [
       it: 'Camera doppia accogliente con bagno privato, ideale per coppie o amici che vogliono scoprire Venezia senza rinunciare al comfort.',
       en: 'Cozy double room with private bathroom, ideal for couples or friends who want to discover Venice without sacrificing comfort.',
     },
-    images: ['/media/images/hall-algobbo.jpg'],
+    images: [],
     capacity: { adults: 2, children: 0, total: 2 },
     bedType: {
       it: 'Letto matrimoniale o due letti singoli',
@@ -74,7 +74,7 @@ export const rooms: Room[] = [
       it: 'Camera doppia economica con aria condizionata e wc esterno: una scelta pratica per chi cerca semplicità a prezzo contenuto.',
       en: 'Budget double room with air conditioning and external WC: a practical choice for those seeking simplicity at an affordable price.',
     },
-    images: ['/media/images/hall-algobbo2.jpg'],
+    images: [],
     capacity: { adults: 2, children: 0, total: 2 },
     bedType: {
       it: 'Letto matrimoniale o due letti singoli',
@@ -149,7 +149,7 @@ export const rooms: Room[] = [
       it: 'Camera singola economica con bagno condiviso, una scelta funzionale per chi viaggia da solo e cerca il massimo risparmio.',
       en: 'Budget single room with shared bathroom, a functional choice for solo travellers looking for maximum savings.',
     },
-    images: ['/media/images/hall-algobbo2.jpg'],
+    images: [],
     capacity: { adults: 1, children: 0, total: 1 },
     bedType: {
       it: 'Letto singolo',

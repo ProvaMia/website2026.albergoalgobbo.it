@@ -269,8 +269,11 @@ export function AdminRooms() {
   const ImagePreview = ({ src, alt }: { src: string; alt: string }) => {
     if (!src) {
       return (
-        <div className="flex h-10 w-14 items-center justify-center border border-stone/30 bg-cream text-stone">
-          <ImageIcon className="h-4 w-4" aria-hidden="true" />
+        <div className="flex h-16 w-24 flex-col items-center justify-center gap-1 border border-stone/30 bg-cream p-1 text-center text-ink-soft">
+          <ImageIcon className="h-4 w-4 text-stone" aria-hidden="true" />
+          <span className="font-sans text-[8px] font-light uppercase leading-tight tracking-wider text-stone">
+            {t('rooms.noImage')}
+          </span>
         </div>
       )
     }

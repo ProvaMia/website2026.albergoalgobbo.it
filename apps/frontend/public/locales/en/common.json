@@ -49,6 +49,9 @@
     "email": "info@albergoalgobbo.it",
     "phone": "+39 041 715125"
   },
+  "rooms": {
+    "noImage": "Photo not available"
+  },
   "contacts": {
     "hero": {
       "title": "Contacts",

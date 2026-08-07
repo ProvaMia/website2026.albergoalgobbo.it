@@ -1,11 +1,11 @@
-import { Users, Wifi, Wind, Droplets, Flame, PawPrint, Coffee } from 'lucide-react'
+import { Users, Wifi, Wind, Droplets, Flame, PawPrint, Coffee, ImageOff } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 
 interface RoomCardProps {
   name: string
   description: string
-  image: string
+  image?: string
   capacity: string
   priceFrom: number
   services?: string[]
@@ -52,13 +52,22 @@ export function RoomCard({
       )}
     >
       <div className="relative aspect-[16/10] overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-          loading="lazy"
-          decoding="async"
-        />
+        {image ? (
+          <img
+            src={image}
+            alt={name}
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className="flex h-full w-full flex-col items-center justify-center gap-2 border-b border-stone/30 bg-cream text-ink-soft">
+            <ImageOff className="h-6 w-6 text-stone" aria-hidden="true" />
+            <span className="px-2 text-center font-sans text-[10px] font-light uppercase tracking-wider text-stone">
+              {t('rooms.noImage')}
+            </span>
+          </div>
+        )}
         <span className="absolute right-3 top-3 border border-white/50 bg-night/80 px-3 py-1 font-sans text-[11px] font-medium uppercase tracking-wider text-white">
           da €{priceFrom}/notte
         </span>
