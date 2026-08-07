@@ -37,11 +37,13 @@ const languages = languagesMeta.filter(
 interface LanguageSelectorProps {
   variant?: 'desktop' | 'mobile'
   isScrolled?: boolean
+  isTransparent?: boolean
 }
 
 export function LanguageSelector({
   variant = 'desktop',
   isScrolled = false,
+  isTransparent = false,
 }: LanguageSelectorProps) {
   const { i18n } = useTranslation()
   const navigate = useNavigate()
@@ -130,9 +132,11 @@ export function LanguageSelector({
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           'flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg transition-colors',
-          isScrolled
-            ? 'text-gray-900 hover:bg-gray-100'
-            : 'text-ink hover:bg-ink/5'
+          isTransparent
+            ? 'text-white hover:bg-white/10'
+            : isScrolled
+              ? 'text-gray-900 hover:bg-gray-100'
+              : 'text-ink hover:bg-ink/5'
         )}
         aria-expanded={isOpen}
         aria-haspopup="listbox"

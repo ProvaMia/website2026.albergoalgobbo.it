@@ -21,6 +21,7 @@ playwright/.cache/
 .playwright-mcp/
 mobile-booking-form*.png
 admin-rooms-mobile*.png
+hero-mobile-header-top.png
 Preventivo*.pdf
 *.pdf
 

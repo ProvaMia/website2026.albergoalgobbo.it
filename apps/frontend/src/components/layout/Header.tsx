@@ -28,6 +28,7 @@ export function Header() {
   const location = useLocation()
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const isTransparent = !isMobileOpen && !isScrolled
 
   const pathSegments = location.pathname.split('/').filter(Boolean)
   const currentSlug = pathSegments[1] || ''
@@ -56,9 +57,9 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isMobileOpen || isScrolled
-          ? 'border-b border-ink/10 bg-cream'
-          : 'border-b border-transparent bg-cream lg:bg-transparent'
+        isTransparent
+          ? 'border-b border-transparent bg-transparent'
+          : 'border-b border-ink/10 bg-cream'
       )}
     >
       <nav
@@ -69,7 +70,11 @@ export function Header() {
         <div className="flex flex-1 items-center justify-start">
           <LocalizedLink to="home" className="flex-shrink-0">
             <img
-              src="/media/logos/logo-al-gobbo-soloimg.png"
+              src={
+                isTransparent
+                  ? '/media/logos/logo-al-gobbo-BIANCO.png'
+                  : '/media/logos/logo-al-gobbo-soloimg.png'
+              }
               alt="Albergo Al Gobbo"
               className="h-8 w-auto md:h-10"
             />
@@ -90,14 +95,18 @@ export function Header() {
                 key={key}
                 to={key}
                 className={cn(
-                  'group relative px-4 py-2 text-sm font-light text-ink transition-colors hover:text-brick',
+                  'group relative px-4 py-2 text-sm font-light transition-colors',
+                  isTransparent
+                    ? 'text-white hover:text-white/80'
+                    : 'text-ink hover:text-brick',
                   isActive && 'font-medium'
                 )}
               >
                 {t(labelKey)}
                 <span
                   className={cn(
-                    'absolute bottom-0 left-4 right-4 h-px bg-ink transition-all',
+                    'absolute bottom-0 left-4 right-4 h-px transition-all',
+                    isTransparent ? 'bg-white' : 'bg-ink',
                     isActive
                       ? 'scale-x-100 opacity-100'
                       : 'scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100'
@@ -113,23 +122,38 @@ export function Header() {
           <div className="hidden items-center gap-3 lg:flex">
             <LocalizedLink
               to="booking"
-              className="inline-flex items-center justify-center border border-ink bg-transparent px-5 py-2 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink hover:text-white"
+              className={cn(
+                'inline-flex items-center justify-center border px-5 py-2 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors',
+                isTransparent
+                  ? 'border-white bg-transparent text-white hover:bg-white hover:text-ink'
+                  : 'border-ink bg-transparent text-ink hover:bg-ink hover:text-white'
+              )}
             >
               {t('nav.booking')}
             </LocalizedLink>
-            <LanguageSelector variant="desktop" isScrolled={isScrolled} />
+            <LanguageSelector variant="desktop" isTransparent={isTransparent} />
           </div>
 
           <LocalizedLink
             to="booking"
-            className="inline-flex items-center justify-center border border-ink bg-transparent px-3 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-ink hover:text-white lg:hidden"
+            className={cn(
+              'inline-flex items-center justify-center border bg-transparent px-3 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.1em] transition-colors lg:hidden',
+              isTransparent
+                ? 'border-white text-white hover:bg-white hover:text-ink'
+                : 'border-ink text-ink hover:bg-ink hover:text-white'
+            )}
           >
             {t('nav.booking')}
           </LocalizedLink>
 
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="p-2 text-ink transition-colors hover:text-brick lg:hidden"
+            className={cn(
+              'p-2 transition-colors lg:hidden',
+              isTransparent
+                ? 'text-white hover:text-white/80'
+                : 'text-ink hover:text-brick'
+            )}
             aria-label={isMobileOpen ? t('aria.closeMenu') : t('aria.openMenu')}
             aria-expanded={isMobileOpen}
           >

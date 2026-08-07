@@ -85,9 +85,9 @@ export function Home() {
       <Hero
         variant="home"
         backgroundImage={{
-          mobile: '/media/heros/mobile/hero-light-logo-v-1080.webp',
+          mobile: '/media/heros/mobile/hero-al-gobbo-v-1080.webp',
           mobileSrcSet:
-            '/media/heros/mobile/hero-light-logo-v-810.webp 810w, /media/heros/mobile/hero-light-logo-v-1080.webp 1080w, /media/heros/mobile/hero-light-logo-v-1215.webp 1215w',
+            '/media/heros/mobile/hero-al-gobbo-v-1080.webp 1080w, /media/heros/mobile/hero-al-gobbo-v-1440.webp 1440w, /media/heros/mobile/hero-al-gobbo-v-2160.webp 2160w',
           desktop: '/media/heros/desktop/al_gobbo_3840.webp',
           desktopSrcSet:
             '/media/heros/desktop/al_gobbo_1280.webp 1280w, /media/heros/desktop/al_gobbo_1920.webp 1920w, /media/heros/desktop/al_gobbo_2560.webp 2560w, /media/heros/desktop/al_gobbo_3840.webp 3840w',
