@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useOutletContext } from 'react-router-dom'
 import { BedDouble, ImageIcon, Plus, Trash2, Upload, X, ZoomIn } from 'lucide-react'
+import { cn } from '@/lib/utils'
 import { rooms as staticRooms } from '@/data/rooms'
 import { type Booking } from '@/data/bookings'
 
@@ -266,10 +267,15 @@ export function AdminRooms() {
     setUnavailabilityNote('')
   }
 
-  const ImagePreview = ({ src, alt }: { src: string; alt: string }) => {
+  const ImagePreview = ({ src, alt, className }: { src: string; alt: string; className?: string }) => {
     if (!src) {
       return (
-        <div className="flex h-16 w-24 flex-col items-center justify-center gap-1 border border-stone/30 bg-cream p-1 text-center text-ink-soft">
+        <div
+          className={cn(
+            'flex h-16 w-24 flex-col items-center justify-center gap-1 border border-stone/30 bg-cream p-1 text-center text-ink-soft',
+            className
+          )}
+        >
           <ImageIcon className="h-4 w-4 text-stone" aria-hidden="true" />
           <span className="font-sans text-[8px] font-light uppercase leading-tight tracking-wider text-stone">
             {t('rooms.noImage')}
@@ -281,7 +287,10 @@ export function AdminRooms() {
       <button
         type="button"
         onClick={() => openPreview(src, alt)}
-        className="group relative h-10 w-14 overflow-hidden border border-stone/30"
+        className={cn(
+          'group relative h-10 w-14 overflow-hidden border border-stone/30',
+          className
+        )}
         aria-label={t('admin.rooms.zoomImage')}
       >
         <img
@@ -446,22 +455,22 @@ export function AdminRooms() {
       </form>
 
       <div className="overflow-x-auto border border-stone/50 bg-white">
-        <table className="w-full min-w-[640px]">
+        <table className="w-full table-fixed">
           <thead className="bg-cream">
             <tr className="border-b border-stone/50">
-              <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+              <th className="w-[25%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                 {t('admin.rooms.name')}
               </th>
-              <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+              <th className="w-[15%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                 {t('admin.rooms.capacity')}
               </th>
-              <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+              <th className="w-[17%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                 {t('admin.rooms.price')}
               </th>
-              <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+              <th className="w-[32%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                 {t('admin.rooms.image')}
               </th>
-              <th className="px-4 py-3 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+              <th className="w-[11%] px-2 py-2 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                 {t('admin.rooms.actions')}
               </th>
             </tr>
@@ -469,18 +478,18 @@ export function AdminRooms() {
           <tbody>
             {draftRooms.map((room) => (
               <tr key={room.slug} className="border-b border-stone/30 last:border-b-0">
-                <td className="px-4 py-4">
-                  <div className="flex items-center gap-3">
-                    <BedDouble className="h-5 w-5 text-gold" aria-hidden="true" />
-                    <span className="font-sans text-sm font-medium text-ink">
+                <td className="px-2 py-3 md:px-4 md:py-4">
+                  <div className="flex items-center gap-2">
+                    <BedDouble className="h-4 w-4 flex-shrink-0 text-gold sm:h-5 sm:w-5" aria-hidden="true" />
+                    <span className="break-words font-sans text-sm font-medium leading-tight text-ink">
                       {room.name[lang] || room.name.en}
                     </span>
                   </div>
                 </td>
-                <td className="px-4 py-4 font-sans text-sm font-light text-ink-soft">
+                <td className="px-2 py-3 font-sans text-sm font-light leading-tight text-ink-soft md:px-4 md:py-4">
                   {room.capacity.total} {t('admin.rooms.guests')}
                 </td>
-                <td className="px-4 py-4">
+                <td className="px-2 py-3 md:px-4 md:py-4">
                   <div className="flex items-center gap-1">
                     <span className="font-sans text-sm text-ink-soft">€</span>
                     <input
@@ -488,14 +497,18 @@ export function AdminRooms() {
                       min={0}
                       value={room.priceFrom}
                       onChange={(e) => updatePrice(room.id, Number(e.target.value))}
-                      className="w-20 border border-stone/60 bg-white px-2 py-1 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+                      className="w-14 border border-stone/60 bg-white px-1 py-1 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none sm:w-20 sm:px-2"
                     />
                   </div>
                 </td>
-                <td className="px-4 py-4">
-                  <div className="flex items-center gap-3">
-                    <ImagePreview src={room.image} alt={room.name[lang] || room.name.en} />
-                    <label className="inline-flex cursor-pointer items-center gap-2 border border-ink/20 px-3 py-1.5 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink/5">
+                <td className="px-2 py-3 md:px-4 md:py-4">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <ImagePreview
+                      src={room.image}
+                      alt={room.name[lang] || room.name.en}
+                      className="h-8 w-12 sm:h-10 sm:w-14"
+                    />
+                    <label className="inline-flex cursor-pointer items-center gap-1 border border-ink/20 px-2 py-1 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink/5 sm:gap-2 sm:px-3 sm:py-1.5">
                       <Upload className="h-4 w-4" aria-hidden="true" />
                       <span className="hidden sm:inline">{room.image ? t('admin.rooms.changeImage') : t('admin.rooms.uploadImage')}</span>
                       <input
@@ -514,7 +527,7 @@ export function AdminRooms() {
                       <button
                         type="button"
                         onClick={() => removeImage(room.id)}
-                        className="inline-flex items-center justify-center p-2 text-ink-soft transition-colors hover:text-brick"
+                        className="inline-flex items-center justify-center p-1.5 text-ink-soft transition-colors hover:text-brick sm:p-2"
                         aria-label={t('admin.rooms.removeImage')}
                       >
                         <X className="h-4 w-4" aria-hidden="true" />
@@ -522,11 +535,11 @@ export function AdminRooms() {
                     )}
                   </div>
                 </td>
-                <td className="px-4 py-4 text-center">
+                <td className="px-2 py-3 text-center md:px-4 md:py-4">
                   <button
                     type="button"
                     onClick={() => confirmDeleteRoom(room)}
-                    className="inline-flex items-center justify-center p-2 text-brick transition-colors hover:bg-brick/10"
+                    className="inline-flex items-center justify-center p-1.5 text-brick transition-colors hover:bg-brick/10 sm:p-2"
                     aria-label={t('admin.rooms.delete')}
                   >
                     <Trash2 className="h-4 w-4" aria-hidden="true" />
@@ -705,23 +718,23 @@ export function AdminRooms() {
         </button>
 
         {otherUnavailabilities.length > 0 && (
-          <div className="mt-6 overflow-hidden border border-stone/50 bg-white">
-            <table className="w-full">
+          <div className="mt-6 overflow-x-auto border border-stone/50 bg-white">
+            <table className="w-full table-fixed">
               <thead className="bg-cream">
                 <tr className="border-b border-stone/50">
-                  <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+                  <th className="w-[25%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                     {t('admin.rooms.unavailabilityRoom')}
                   </th>
-                  <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+                  <th className="w-[18%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                     {t('admin.rooms.unavailabilityFrom')}
                   </th>
-                  <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+                  <th className="w-[18%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                     {t('admin.rooms.unavailabilityTo')}
                   </th>
-                  <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+                  <th className="w-[29%] px-2 py-2 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                     {t('admin.rooms.unavailabilityNote')}
                   </th>
-                  <th className="px-4 py-3 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
+                  <th className="w-[10%] px-2 py-2 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft md:px-4 md:py-3">
                     {t('admin.rooms.actions')}
                   </th>
                 </tr>
@@ -731,23 +744,23 @@ export function AdminRooms() {
                   const room = roomById.get(unavailability.roomId)
                   return (
                     <tr key={unavailability.id} className="border-b border-stone/30 last:border-b-0">
-                      <td className="px-4 py-4 font-sans text-sm font-medium text-ink">
+                      <td className="px-2 py-3 font-sans text-sm font-medium leading-tight text-ink md:px-4 md:py-4">
                         {room ? room.name[lang] || room.name.en : unavailability.roomId}
                       </td>
-                      <td className="px-4 py-4 font-sans text-sm font-light text-ink-soft">
+                      <td className="px-2 py-3 font-sans text-sm font-light leading-tight text-ink-soft md:px-4 md:py-4">
                         {unavailability.startDate}
                       </td>
-                      <td className="px-4 py-4 font-sans text-sm font-light text-ink-soft">
+                      <td className="px-2 py-3 font-sans text-sm font-light leading-tight text-ink-soft md:px-4 md:py-4">
                         {unavailability.endDate ?? t('admin.rooms.unavailabilityIndeterminate')}
                       </td>
-                      <td className="px-4 py-4 font-sans text-sm font-light text-ink-soft">
+                      <td className="break-words px-2 py-3 font-sans text-sm font-light leading-tight text-ink-soft md:px-4 md:py-4">
                         {unavailability.note || '-'}
                       </td>
-                      <td className="px-4 py-4 text-center">
+                      <td className="px-2 py-3 text-center md:px-4 md:py-4">
                         <button
                           type="button"
                           onClick={() => confirmDeleteUnavailability(unavailability)}
-                          className="inline-flex items-center justify-center p-2 text-brick transition-colors hover:bg-brick/10"
+                          className="inline-flex items-center justify-center p-1.5 text-brick transition-colors hover:bg-brick/10 sm:p-2"
                           aria-label={t('admin.rooms.unavailabilityDelete')}
                         >
                           <Trash2 className="h-4 w-4" aria-hidden="true" />
