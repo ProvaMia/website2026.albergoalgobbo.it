@@ -120,6 +120,13 @@ export function Header() {
             <LanguageSelector variant="desktop" isScrolled={isScrolled} />
           </div>
 
+          <LocalizedLink
+            to="booking"
+            className="inline-flex items-center justify-center border border-ink bg-transparent px-3 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-ink hover:text-white lg:hidden"
+          >
+            {t('nav.booking')}
+          </LocalizedLink>
+
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             className="p-2 text-ink transition-colors hover:text-brick lg:hidden"
