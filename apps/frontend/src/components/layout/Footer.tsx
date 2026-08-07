@@ -19,12 +19,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <img
-              src="/media/logos/logo-al-gobbo-BIANCO.png"
-              alt="Albergo Al Gobbo"
-              className="h-8 w-auto"
-              loading="lazy"
-            />
+            <LocalizedLink to="home" className="inline-block">
+              <img
+                src="/media/logos/logo-al-gobbo-BIANCO.png"
+                alt="Albergo Al Gobbo"
+                className="h-8 w-auto"
+                loading="lazy"
+              />
+            </LocalizedLink>
             <p className="mt-4 max-w-sm font-sans text-sm font-light leading-relaxed text-white/70">
               {t('footer.tagline')}
             </p>
@@ -69,7 +71,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-serif text-lg font-normal text-gold">{t('footer.contacts')}</h3>
+            <LocalizedLink
+              to="contacts"
+              className="inline-block font-serif text-lg font-normal text-gold transition-colors hover:text-gold-deep"
+            >
+              {t('footer.contacts')}
+            </LocalizedLink>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold" aria-hidden="true" />
