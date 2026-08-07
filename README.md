@@ -163,7 +163,7 @@ vengano servite dalla SPA.
 Il frontend è raggiungibile all’indirizzo:
 
 ```
-https://db9a3f6f.albergoalgobbo-frontend.pages.dev
+https://3d7c22ce.albergoalgobbo-frontend.pages.dev
 ```
 
 ## Deploy backend su Cloudflare Workers
