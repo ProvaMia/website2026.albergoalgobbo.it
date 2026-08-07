@@ -108,6 +108,17 @@ export function Footer() {
           <p className="font-sans text-xs font-light text-white/50">
             © {year} Albergo Al Gobbo — {t('footer.allRightsReserved')}
           </p>
+          <p className="font-sans text-xs font-light text-white/50">
+            {t('footer.developedBy')}{' '}
+            <a
+              href={t('footer.developerUrl')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/70 transition-colors hover:text-gold"
+            >
+              {t('footer.developerName')}
+            </a>
+          </p>
         </div>
       </div>
     </footer>
