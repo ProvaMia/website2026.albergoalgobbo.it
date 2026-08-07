@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 
 export function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { key } = useLocation()
   const isFirstRender = useRef(true)
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export function ScrollToTop() {
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [pathname])
+  }, [key])
 
   return null
 }
