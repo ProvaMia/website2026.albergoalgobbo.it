@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="bg-night text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 justify-items-start lg:grid-cols-3">
           <div>
             <img
               src="/media/logos/logo-al-gobbo-BIANCO.png"
@@ -31,7 +31,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="w-fit justify-self-center text-left">
             <h3 className="font-serif text-lg font-normal text-gold">{t('footer.navigation')}</h3>
             <ul className="mt-4 space-y-2">
               {footerNavItems.map(({ key, labelKey }) => (
@@ -47,7 +47,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="w-fit lg:justify-self-end">
             <h3 className="font-serif text-lg font-normal text-gold">{t('footer.contacts')}</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
