@@ -366,7 +366,7 @@ export function AdminRooms() {
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
               placeholder={t('admin.rooms.newName')}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink placeholder:text-stone focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink placeholder:text-stone focus:border-gold focus:outline-none"
             />
           </div>
 
@@ -380,7 +380,7 @@ export function AdminRooms() {
               min={1}
               value={newCapacity}
               onChange={(e) => setNewCapacity(Math.max(1, Number(e.target.value)))}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
             />
           </div>
 
@@ -395,7 +395,7 @@ export function AdminRooms() {
               value={newPrice || ''}
               onChange={(e) => setNewPrice(Number(e.target.value))}
               placeholder="€"
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink placeholder:text-stone focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink placeholder:text-stone focus:border-gold focus:outline-none"
             />
           </div>
 
@@ -445,8 +445,8 @@ export function AdminRooms() {
         </button>
       </form>
 
-      <div className="overflow-hidden border border-stone/50 bg-white">
-        <table className="w-full">
+      <div className="overflow-x-auto border border-stone/50 bg-white">
+        <table className="w-full min-w-[640px]">
           <thead className="bg-cream">
             <tr className="border-b border-stone/50">
               <th className="px-4 py-3 text-left font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
@@ -557,7 +557,7 @@ export function AdminRooms() {
               id="unavailability-room"
               value={unavailabilityRoomId}
               onChange={(e) => setUnavailabilityRoomId(e.target.value)}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
             >
               <option value="">{t('admin.rooms.unavailabilitySelectRoom')}</option>
               {draftRooms.map((room) => (
@@ -580,7 +580,7 @@ export function AdminRooms() {
                 setUnavailabilityType(value)
                 if (value === 'booking') setUnavailabilityIndeterminate(false)
               }}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
             >
               <option value="other">{t('admin.rooms.unavailabilityTypeOther')}</option>
               <option value="booking">{t('admin.rooms.unavailabilityTypeBooking')}</option>
@@ -596,7 +596,7 @@ export function AdminRooms() {
               type="date"
               value={unavailabilityStart}
               onChange={(e) => setUnavailabilityStart(e.target.value)}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
             />
           </div>
 
@@ -611,7 +611,7 @@ export function AdminRooms() {
               min={unavailabilityStart}
               disabled={unavailabilityIndeterminate}
               onChange={(e) => setUnavailabilityEnd(e.target.value)}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none disabled:cursor-not-allowed disabled:bg-stone/10 disabled:text-stone"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none disabled:cursor-not-allowed disabled:bg-stone/10 disabled:text-stone"
             />
           </div>
 
@@ -644,7 +644,7 @@ export function AdminRooms() {
                   type="text"
                   value={unavailabilityGuestName}
                   onChange={(e) => setUnavailabilityGuestName(e.target.value)}
-                  className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+                  className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
                 />
               </div>
               <div>
@@ -656,7 +656,7 @@ export function AdminRooms() {
                   type="email"
                   value={unavailabilityGuestEmail}
                   onChange={(e) => setUnavailabilityGuestEmail(e.target.value)}
-                  className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+                  className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
                 />
               </div>
               <div>
@@ -668,7 +668,7 @@ export function AdminRooms() {
                   type="tel"
                   value={unavailabilityGuestPhone}
                   onChange={(e) => setUnavailabilityGuestPhone(e.target.value)}
-                  className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+                  className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
                 />
               </div>
             </>
@@ -683,7 +683,7 @@ export function AdminRooms() {
               rows={2}
               value={unavailabilityNote}
               onChange={(e) => setUnavailabilityNote(e.target.value)}
-              className="w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
+              className="w-full min-w-0 max-w-full border border-stone/60 bg-white px-3 py-2 font-sans text-sm font-light text-ink focus:border-gold focus:outline-none"
             />
           </div>
         </form>
