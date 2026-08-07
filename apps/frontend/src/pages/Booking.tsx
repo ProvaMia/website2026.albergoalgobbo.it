@@ -59,7 +59,6 @@ export function Booking() {
   const [requestEmail, setRequestEmail] = useState('')
   const [requestPhone, setRequestPhone] = useState('')
   const [requestMessage, setRequestMessage] = useState('')
-  const [requestSubmitted, setRequestSubmitted] = useState(false)
 
   const lang = i18n.language as 'it' | 'en'
 
@@ -96,13 +95,11 @@ export function Booking() {
 
   const handleRequestSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: wire to real backend / email service
-    setRequestSubmitted(true)
+    // TODO: wire to payment / booking backend when purchased
   }
 
   const closeModal = () => {
     setSelectedRoom(null)
-    setRequestSubmitted(false)
     setRequestName('')
     setRequestEmail('')
     setRequestPhone('')
@@ -165,6 +162,7 @@ export function Booking() {
                 serviceLabels={serviceLabels}
                 disabled={!searched}
                 buttonLabel={t('buttons.bookNow')}
+                className="!bg-ivory"
                 onBook={() => setSelectedRoom(room)}
               />
             ))}
@@ -216,35 +214,14 @@ export function Booking() {
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
 
-            {requestSubmitted ? (
-              <div className="py-8 text-center">
-                <h3
-                  id="booking-modal-title"
-                  className="font-serif text-2xl font-light text-ink"
-                >
-                  {t('booking.modal.successTitle')}
-                </h3>
-                <p className="mt-4 font-sans text-base font-light text-muted">
-                  {t('booking.modal.successText')}
-                </p>
-                <button
-                  type="button"
-                  onClick={closeModal}
-                  className="mt-6 inline-flex items-center justify-center border border-ink px-8 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink hover:text-white"
-                >
-                  {t('aria.close')}
-                </button>
-              </div>
-            ) : (
-              <>
-                <h3
-                  id="booking-modal-title"
-                  className="font-serif text-2xl font-light text-ink"
-                >
-                  {t('booking.modal.title')}
-                </h3>
+            <h3
+              id="booking-modal-title"
+              className="font-serif text-2xl font-light text-ink"
+            >
+              {t('booking.modal.title')}
+            </h3>
 
-                <div className="mt-6 space-y-3 border border-stone/50 bg-cream p-4 font-sans text-sm font-light text-ink-soft">
+            <div className="mt-6 space-y-3 border border-stone/50 bg-cream p-4 font-sans text-sm font-light text-ink-soft">
                   <div className="flex items-center gap-3">
                     <span className="font-medium text-ink">{selectedRoom.name[lang] || selectedRoom.name.en}</span>
                     <span className="text-stone" aria-hidden="true">·</span>
@@ -340,8 +317,6 @@ export function Booking() {
                     {t('buttons.send')}
                   </button>
                 </form>
-              </>
-            )}
           </div>
         </div>
       )}
