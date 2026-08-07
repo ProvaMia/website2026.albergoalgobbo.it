@@ -56,9 +56,9 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
-          ? 'border-b border-ink/10 bg-cream/95 backdrop-blur-md'
-          : 'border-b border-transparent bg-transparent'
+        isMobileOpen || isScrolled
+          ? 'border-b border-ink/10 bg-cream'
+          : 'border-b border-transparent bg-cream lg:bg-transparent'
       )}
     >
       <nav

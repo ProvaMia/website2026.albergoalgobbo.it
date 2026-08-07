@@ -66,7 +66,7 @@ export function RoomCard({
 
       <div className="flex flex-1 flex-col p-5 md:p-6">
         <h3 className="font-serif text-xl font-normal text-ink md:text-2xl">{name}</h3>
-        <p className="mt-2 line-clamp-2 font-sans text-sm font-light leading-relaxed text-muted">{description}</p>
+        <p className="mt-2 font-sans text-sm font-light leading-relaxed text-muted">{description}</p>
 
         <div className="mt-4 flex items-center gap-2 font-sans text-sm font-light text-ink-soft">
           <Users className="h-4 w-4 text-gold" aria-hidden="true" />

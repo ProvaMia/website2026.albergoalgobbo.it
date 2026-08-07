@@ -44,7 +44,7 @@ export function Hero({
     return (
       <section
         className={cn(
-          'relative h-dvh w-full overflow-hidden bg-ivory',
+          'relative h-screen w-full overflow-hidden bg-ivory',
           className
         )}
       >

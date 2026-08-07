@@ -75,12 +75,12 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
         className
       )}
     >
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:items-end">
-        <div className="lg:col-span-1">
+      <div className="grid min-w-0 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:items-end">
+        <div className="min-w-0 lg:col-span-1">
           <label htmlFor="check-in" className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
             {t('booking.form.checkIn')}
           </label>
-          <div className="relative">
+          <div className="relative min-w-0">
             <CalendarDays className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" aria-hidden="true" />
             <input
               id="check-in"
@@ -88,17 +88,17 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
               value={checkIn}
               min={formatDateInput(today)}
               onChange={(e) => setCheckIn(e.target.value)}
-              className="w-full border border-stone/60 bg-cream py-3 pl-10 pr-3 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
+              className="w-full min-w-0 border border-stone/60 bg-cream py-3 pl-10 pr-3 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
               required
             />
           </div>
         </div>
 
-        <div className="lg:col-span-1">
+        <div className="min-w-0 lg:col-span-1">
           <label htmlFor="check-out" className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
             {t('booking.form.checkOut')}
           </label>
-          <div className="relative">
+          <div className="relative min-w-0">
             <CalendarDays className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" aria-hidden="true" />
             <input
               id="check-out"
@@ -106,23 +106,23 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
               value={checkOut}
               min={checkIn || formatDateInput(today)}
               onChange={(e) => setCheckOut(e.target.value)}
-              className="w-full border border-stone/60 bg-cream py-3 pl-10 pr-3 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
+              className="w-full min-w-0 border border-stone/60 bg-cream py-3 pl-10 pr-3 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
               required
             />
           </div>
         </div>
 
-        <div className="lg:col-span-1">
+        <div className="min-w-0 lg:col-span-1">
           <label htmlFor="adults" className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
             {t('booking.form.adults')}
           </label>
-          <div className="relative">
+          <div className="relative min-w-0">
             <Users className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" aria-hidden="true" />
             <select
               id="adults"
               value={adults}
               onChange={(e) => setAdults(Number(e.target.value))}
-              className="w-full appearance-none border border-stone/60 bg-cream py-3 pl-10 pr-8 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
+              className="w-full min-w-0 appearance-none border border-stone/60 bg-cream py-3 pl-10 pr-8 font-sans text-sm font-light text-ink outline-none transition-colors focus:border-gold"
             >
               {[1, 2, 3, 4].map((n) => (
                 <option key={n} value={n}>{n}</option>
@@ -131,7 +131,7 @@ export function BookingForm({ onSearch, className }: BookingFormProps) {
           </div>
         </div>
 
-        <div className="lg:col-span-1">
+        <div className="min-w-0 lg:col-span-1">
           <button
             type="submit"
             className="inline-flex w-full items-center justify-center gap-2 border border-brick bg-brick px-6 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brick-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
